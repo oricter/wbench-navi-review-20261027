@@ -1,0 +1,44 @@
+{
+  "pass": true,
+  "official": "/fsx/pipeline/world500-standalone/xuxiake/wbench-navi-20261027/lane1/cases/case_68/official-first-frame.jpg",
+  "opening": "/fsx/pipeline/world500-standalone/xuxiake/wbench-navi-20261027/lane1/cases/case_68/opening-gate.jpg",
+  "mask": "/fsx/pipeline/world500-standalone/xuxiake/wbench-navi-20261027/lane1/cases/case_68/subject-mask.official.png",
+  "subject_bbox_official": [
+    247,
+    230,
+    364,
+    290
+  ],
+  "subject_bbox_opening": [
+    242,
+    227,
+    368,
+    291
+  ],
+  "subject_cx_official": 0.4773,
+  "subject_cy_official": 0.7222,
+  "subject_cx_opening": 0.4766,
+  "subject_cy_opening": 0.7194,
+  "subject_area_official": 0.0305,
+  "subject_area_opening": 0.035,
+  "subject_cx_delta": 0.0008,
+  "subject_cy_delta": 0.0028,
+  "subject_area_rel": 0.1487,
+  "horizon_official": 0.4222,
+  "horizon_opening": 0.4472,
+  "horizon_delta": 0.025,
+  "gray_mae": 47.62,
+  "upper_fill_official": 0.9331,
+  "upper_fill_opening": 1.0,
+  "upper_fill_delta": 0.0669,
+  "thresholds": {
+    "cx": 0.08,
+    "cy": 0.08,
+    "area_rel": 0.25,
+    "horizon": 0.06,
+    "upper_fill": 0.18
+  },
+  "reasons": [
+    "within_thresholds"
+  ]
+}
