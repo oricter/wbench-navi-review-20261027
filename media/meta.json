@@ -1,0 +1,67 @@
+[
+  {
+    "case": 5,
+    "lane": 4,
+    "pass": true,
+    "cx": 0.0,
+    "cy": 0.0194,
+    "area": 0.0406,
+    "hz": 0.0139,
+    "uf": 0.0323,
+    "ol": "PASS Threshold: RGB MAE <= 8 Opening: opening-gate.jpg Source frame: uploads/frames/f000000.jpg Decoded video frame: mot",
+    "accept": true,
+    "motion": true
+  },
+  {
+    "case": 10,
+    "lane": 1,
+    "pass": true,
+    "cx": 0.0023,
+    "cy": 0.0167,
+    "area": 0.1815,
+    "hz": 0.0528,
+    "uf": 0.0385,
+    "ol": "mae=0.8853 threshold=8 pass=true fps=30 opening_hold_frames=30",
+    "accept": true,
+    "motion": true
+  },
+  {
+    "case": 11,
+    "lane": 2,
+    "pass": true,
+    "cx": 0.0016,
+    "cy": 0.0028,
+    "area": 0.1417,
+    "hz": 0.0417,
+    "uf": 0.0103,
+    "ol": "mae=1.3197 threshold=8 pass=true method=same-session opening capture, 30 identical hold frames, deterministic 1/30 s WAS",
+    "accept": true,
+    "motion": true
+  },
+  {
+    "case": 15,
+    "lane": 4,
+    "pass": true,
+    "cx": 0.007,
+    "cy": 0.0139,
+    "area": 0.0466,
+    "hz": 0.0333,
+    "uf": 0.0804,
+    "ol": "mae=0.7096 threshold=8 pass=True fps=30 frames=330 duration_seconds=11 method=12s settle, frozen opening, deterministic ",
+    "accept": true,
+    "motion": true
+  },
+  {
+    "case": 17,
+    "lane": 1,
+    "pass": true,
+    "cx": 0.0664,
+    "cy": 0.0306,
+    "area": 0.156,
+    "hz": 0.0194,
+    "uf": 0.0736,
+    "ol": "Opening lock: PASS RGB MAE opening-gate.jpg vs decoded motion frame 0: 1.4505 Threshold: <= 8 Capture: 1376x768, determi",
+    "accept": true,
+    "motion": true
+  }
+]

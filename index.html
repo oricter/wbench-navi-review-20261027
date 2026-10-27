@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>WBench Navi 验收 · 2026-10-27</title>
+<style>
+:root { --bg:#0b1220; --card:#121a2b; --fg:#e7eefc; --muted:#9fb0cc; --pass:#16a34a; --fail:#dc2626; --line:#243044; }
+* { box-sizing:border-box; }
+body { margin:0; font:15px/1.5 ui-sans-serif,system-ui; background:var(--bg); color:var(--fg); }
+main { max-width:1100px; margin:0 auto; padding:24px 16px 80px; }
+h1 { font-size:1.6rem; margin:0 0 8px; }
+.lede { color:var(--muted); margin-bottom:18px; }
+.summary { display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:10px; margin:16px 0 24px; }
+.pill { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:12px 14px; }
+.pill .label { color:var(--muted); font-size:12px; }
+.pill .value { font-size:1.3rem; font-weight:700; margin-top:4px; }
+.badge { display:inline-block; padding:2px 8px; border-radius:999px; font-size:12px; font-weight:600; margin-right:6px; }
+.comp-pass,.ol-pass { background:#052e16; color:#86efac; border:1px solid #166534; }
+.comp-fail { background:#450a0a; color:#fca5a5; border:1px solid #991b1b; }
+.lane-tag { color:var(--muted); font-size:12px; }
+.card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:16px; margin:14px 0; }
+.card-head { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-bottom:8px; }
+.card-head h2 { margin:0; margin-right:8px; }
+.pair { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+figure { margin:0; }
+img { width:100%; border-radius:8px; background:#000; display:block; }
+figcaption { color:var(--muted); font-size:12px; margin-top:4px; }
+.why { margin:8px 0 12px; }
+.section-title { margin-top:28px; border-bottom:1px solid var(--line); padding-bottom:6px; }
+table { width:100%; border-collapse:collapse; font-size:13px; }
+th,td { border:1px solid var(--line); padding:6px 8px; text-align:left; }
+th { background:#0f172a; color:var(--muted); }
+@media (max-width:700px) { .pair { grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>WBench Navi 验收（158 榜）</h1>
+  <p class="lede">更新：2026-10-28 00:33 CST（Asia/Shanghai）。标准：白膜无投影 · opening-lock mae≤8 · composition_gate（cx/cy≤8% area≤25% horizon≤6%）· 人用人形 SDK。FAIL10 已收口（WBench20 页 18/2）。本页只列 Navi 新产题。</p>
+  <div class="summary">
+    <div class="pill"><div class="label">本批构图 PASS</div><div class="value">5</div></div>
+    <div class="pill"><div class="label">本批构图 FAIL</div><div class="value">0</div></div>
+    <div class="pill"><div class="label">四路并发</div><div class="value">xxk-1..4</div></div>
+    <div class="pill"><div class="label">目标</div><div class="value">158</div></div>
+  </div>
+  <h2 class="section-title">构图门禁</h2>
+  <table>
+    <thead><tr><th>题</th><th>Lane</th><th>门禁</th><th>cxΔ</th><th>cyΔ</th><th>area</th><th>horizonΔ</th><th>upper_fillΔ</th></tr></thead>
+    <tbody>
+<tr><td>#5</td><td>L4</td><td><span class="badge comp-pass">PASS</span></td><td>0.0</td><td>0.0194</td><td>0.0406</td><td>0.0139</td><td>0.0323</td></tr>
+<tr><td>#10</td><td>L1</td><td><span class="badge comp-pass">PASS</span></td><td>0.0023</td><td>0.0167</td><td>0.1815</td><td>0.0528</td><td>0.0385</td></tr>
+<tr><td>#11</td><td>L2</td><td><span class="badge comp-pass">PASS</span></td><td>0.0016</td><td>0.0028</td><td>0.1417</td><td>0.0417</td><td>0.0103</td></tr>
+<tr><td>#15</td><td>L4</td><td><span class="badge comp-pass">PASS</span></td><td>0.007</td><td>0.0139</td><td>0.0466</td><td>0.0333</td><td>0.0804</td></tr>
+<tr><td>#17</td><td>L1</td><td><span class="badge comp-pass">PASS</span></td><td>0.0664</td><td>0.0306</td><td>0.156</td><td>0.0194</td><td>0.0736</td></tr>
+
+    </tbody>
+  </table>
+  <h2 class="section-title">题卡</h2>
+  
+    <article class="card" id="case5">
+      <div class="card-head">
+        <h2>#5</h2>
+        <span class="badge comp-pass">构图 PASS</span>
+        <span class="badge ol-pass">开场锁定 PASS · mae=ok</span>
+        <span class="lane-tag">L4</span>
+      </div>
+      <p class="why pass">cxΔ=0.0 cyΔ=0.0194 area_rel=0.0406 horizonΔ=0.0139 upper_fillΔ=0.0323 · ACCEPT=Y · motion=Y · 白膜无投影 · official-mask gate</p>
+      <div class="pair">
+        <figure><img src="media/case_5_official.jpg" alt="official #5" loading="lazy"/><figcaption>官方首帧</figcaption></figure>
+        <figure><img src="media/case_5_opening.jpg" alt="opening #5" loading="lazy"/><figcaption>opening-gate</figcaption></figure>
+      </div>
+    </article>
+    <article class="card" id="case10">
+      <div class="card-head">
+        <h2>#10</h2>
+        <span class="badge comp-pass">构图 PASS</span>
+        <span class="badge ol-pass">开场锁定 PASS · mae=0.8853</span>
+        <span class="lane-tag">L1</span>
+      </div>
+      <p class="why pass">cxΔ=0.0023 cyΔ=0.0167 area_rel=0.1815 horizonΔ=0.0528 upper_fillΔ=0.0385 · ACCEPT=Y · motion=Y · 白膜无投影 · official-mask gate</p>
+      <div class="pair">
+        <figure><img src="media/case_10_official.jpg" alt="official #10" loading="lazy"/><figcaption>官方首帧</figcaption></figure>
+        <figure><img src="media/case_10_opening.jpg" alt="opening #10" loading="lazy"/><figcaption>opening-gate</figcaption></figure>
+      </div>
+    </article>
+    <article class="card" id="case11">
+      <div class="card-head">
+        <h2>#11</h2>
+        <span class="badge comp-pass">构图 PASS</span>
+        <span class="badge ol-pass">开场锁定 PASS · mae=1.3197</span>
+        <span class="lane-tag">L2</span>
+      </div>
+      <p class="why pass">cxΔ=0.0016 cyΔ=0.0028 area_rel=0.1417 horizonΔ=0.0417 upper_fillΔ=0.0103 · ACCEPT=Y · motion=Y · 白膜无投影 · official-mask gate</p>
+      <div class="pair">
+        <figure><img src="media/case_11_official.jpg" alt="official #11" loading="lazy"/><figcaption>官方首帧</figcaption></figure>
+        <figure><img src="media/case_11_opening.jpg" alt="opening #11" loading="lazy"/><figcaption>opening-gate</figcaption></figure>
+      </div>
+    </article>
+    <article class="card" id="case15">
+      <div class="card-head">
+        <h2>#15</h2>
+        <span class="badge comp-pass">构图 PASS</span>
+        <span class="badge ol-pass">开场锁定 PASS · mae=0.7096</span>
+        <span class="lane-tag">L4</span>
+      </div>
+      <p class="why pass">cxΔ=0.007 cyΔ=0.0139 area_rel=0.0466 horizonΔ=0.0333 upper_fillΔ=0.0804 · ACCEPT=Y · motion=Y · 白膜无投影 · official-mask gate</p>
+      <div class="pair">
+        <figure><img src="media/case_15_official.jpg" alt="official #15" loading="lazy"/><figcaption>官方首帧</figcaption></figure>
+        <figure><img src="media/case_15_opening.jpg" alt="opening #15" loading="lazy"/><figcaption>opening-gate</figcaption></figure>
+      </div>
+    </article>
+    <article class="card" id="case17">
+      <div class="card-head">
+        <h2>#17</h2>
+        <span class="badge comp-pass">构图 PASS</span>
+        <span class="badge ol-pass">开场锁定 PASS · mae=ok</span>
+        <span class="lane-tag">L1</span>
+      </div>
+      <p class="why pass">cxΔ=0.0664 cyΔ=0.0306 area_rel=0.156 horizonΔ=0.0194 upper_fillΔ=0.0736 · ACCEPT=Y · motion=Y · 白膜无投影 · official-mask gate</p>
+      <div class="pair">
+        <figure><img src="media/case_17_official.jpg" alt="official #17" loading="lazy"/><figcaption>官方首帧</figcaption></figure>
+        <figure><img src="media/case_17_opening.jpg" alt="opening #17" loading="lazy"/><figcaption>opening-gate</figcaption></figure>
+      </div>
+    </article>
+  <p class="lede">WBench20 FAIL10 验收：<a href="https://oricter.github.io/wbench20-review-20261027/" style="color:#93c5fd">wbench20-review-20261027</a></p>
+</main>
+</body>
+</html>
