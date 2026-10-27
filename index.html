@@ -3,41 +3,37 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>WBench Navi Review — PASS=105</title>
+<title>WBench Navi Review — PASS=154</title>
 <style>
 :root{--bg:#0f1115;--card:#1a1d24;--fg:#e8eaed;--muted:#9aa0a6;--ok:#3ddc97;--bad:#ff6b6b;--new:#ffd166}
 *{box-sizing:border-box}
 body{margin:0;font:14px/1.45 system-ui,sans-serif;background:var(--bg);color:var(--fg)}
-header.top{padding:16px 20px;border-bottom:1px solid #2a2f3a;position:sticky;top:0;background:#0f1115ee;backdrop-filter:blur(6px);z-index:5}
-h1{margin:0 0 6px;font-size:18px}
-.stats span{display:inline-block;margin-right:12px;color:var(--muted)}
-.stats b{color:var(--fg)}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:14px;padding:16px}
-.card{background:var(--card);border:1px solid #2a2f3a;border-radius:10px;padding:10px;overflow:hidden}
-.card.newcard{border-color:#ffd16688;box-shadow:0 0 0 1px #ffd16633}
-.card header{display:flex;align-items:center;gap:8px;margin-bottom:8px}
-.new{background:var(--new);color:#1a1d24;font-size:11px;font-weight:700;padding:1px 6px;border-radius:4px}
+header.top{padding:16px 20px;border-bottom:1px solid #2a2f3a;position:sticky;top:0;background:rgba(15,17,21,.92);backdrop-filter:blur(8px);z-index:10}
+header.top h1{margin:0 0 6px;font-size:18px}
+header.top .stats span{margin-right:14px}
+.ok{color:var(--ok)} .bad{color:var(--bad)} .new{color:var(--new)} .muted{color:var(--muted)}
+main{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:14px;padding:16px}
+.card{background:var(--card);border:1px solid #2a2f3a;border-radius:10px;padding:10px}
+.card header{display:flex;justify-content:space-between;margin-bottom:8px}
 .pair{display:grid;grid-template-columns:1fr 1fr;gap:6px}
-figure{margin:0}
-img{width:100%;height:auto;display:block;border-radius:6px;background:#000}
-figcaption{font-size:11px;color:var(--muted);margin-top:2px}
-.meta{margin-top:8px;font-size:12px;display:flex;flex-wrap:wrap;gap:6px}
-.ok{color:var(--ok)} .bad{color:var(--bad)} .muted{color:var(--muted)}
-.failbar{padding:10px 20px;background:#2a1515;border-bottom:1px solid #4a2020;color:#ffb4b4;font-size:13px}
+.pair figure{margin:0}
+.pair img{width:100%;height:120px;object-fit:cover;border-radius:6px;background:#000}
+.pair figcaption{font-size:11px;color:var(--muted);text-align:center}
+.meta{margin-top:8px;display:flex;flex-wrap:wrap;gap:8px;font-variant-numeric:tabular-nums}
 </style>
 </head>
 <body>
 <header class="top">
-  <h1>WBench Navi Review — PASS=105</h1>
+  <h1>WBench Navi Review 2026-10-27</h1>
   <div class="stats">
-    <span>累计 <b>PASS=105</b></span>
-    <span>诚实 FAIL <b>#2 #9 #61 #69 #92 #93 #101 #103 #123</b></span>
-    <span>本窗 NEW +13: #106 #110 #112 #114 #116 #118 #120 #141 #143 #145 #147 #151 #158</span>
-    <span>更新 2026-10-28 04:05 Asia/Shanghai</span>
+    <span class="ok">PASS=154</span>
+    <span class="bad">FAIL=4 [2, 9, 103, 123]</span>
+    <span class="new">producing=0 []</span>
+    <span class="muted">board=158 / 158</span>
+    <span class="muted">2026-10-28 05:23 Asia/Shanghai</span>
   </div>
 </header>
-<div class="failbar">诚实 FAIL（勿空耗单题）：#2 #9 #61 #69 #92 #93 #101 #103 #123 · cx集群待共享 camera 水平偏置（队列尾声）· FAIL10 副本已剔除</div>
-<main class="grid">
+<main>
 <article class="card" id="c1">
   <header><strong>#1</strong> L3</header>
   <div class="pair">
@@ -46,6 +42,27 @@ figcaption{font-size:11px;color:var(--muted);margin-top:2px}
   </div>
   <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.002</span> <span class="ok">cy=0.013</span> <span class="ok">area=0.240</span> <span class="ok">hz=0.019</span></div>
 </article>
+<article class="card" id="c2">
+  <header><strong>#2</strong> L1</header>
+
+  <div class="meta"><span class="bad">FAIL</span></div>
+</article>
+<article class="card" id="c3">
+  <header><strong>#3</strong> L1</header>
+  <div class="pair">
+    <figure><img src="media/case_3_official.jpg" loading="lazy" alt="official 3"/><figcaption>official</figcaption></figure>
+    <figure><img src="media/case_3_opening.jpg" loading="lazy" alt="opening 3"/><figcaption>opening</figcaption></figure>
+  </div>
+  <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.002</span> <span class="ok">cy=0.018</span> <span class="ok">area=0.065</span> <span class="ok">hz=0.008</span></div>
+</article>
+<article class="card" id="c4">
+  <header><strong>#4</strong> L1</header>
+  <div class="pair">
+    <figure><img src="media/case_4_official.jpg" loading="lazy" alt="official 4"/><figcaption>official</figcaption></figure>
+    <figure><img src="media/case_4_opening.jpg" loading="lazy" alt="opening 4"/><figcaption>opening</figcaption></figure>
+  </div>
+  <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.000</span> <span class="ok">cy=0.019</span> <span class="ok">area=0.041</span> <span class="ok">hz=0.003</span></div>
+</article>
 <article class="card" id="c5">
   <header><strong>#5</strong> L4</header>
   <div class="pair">
@@ -53,6 +70,19 @@ figcaption{font-size:11px;color:var(--muted);margin-top:2px}
     <figure><img src="media/case_5_opening.jpg" loading="lazy" alt="opening 5"/><figcaption>opening</figcaption></figure>
   </div>
   <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.000</span> <span class="ok">cy=0.019</span> <span class="ok">area=0.041</span> <span class="ok">hz=0.014</span></div>
+</article>
+<article class="card" id="c6">
+  <header><strong>#6</strong> L2</header>
+  <div class="pair">
+    <figure><img src="media/case_6_official.jpg" loading="lazy" alt="official 6"/><figcaption>official</figcaption></figure>
+    <figure><img src="media/case_6_opening.jpg" loading="lazy" alt="opening 6"/><figcaption>opening</figcaption></figure>
+  </div>
+  <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.001</span> <span class="ok">cy=0.000</span> <span class="ok">area=0.166</span> <span class="ok">hz=0.000</span></div>
+</article>
+<article class="card" id="c9">
+  <header><strong>#9</strong> L3</header>
+
+  <div class="meta"><span class="bad">FAIL</span></div>
 </article>
 <article class="card" id="c10">
   <header><strong>#10</strong> L1</header>
@@ -78,6 +108,22 @@ figcaption{font-size:11px;color:var(--muted);margin-top:2px}
   </div>
   <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.001</span> <span class="ok">cy=0.008</span> <span class="ok">area=0.151</span> <span class="ok">hz=0.042</span></div>
 </article>
+<article class="card" id="c13">
+  <header><strong>#13</strong> L2</header>
+  <div class="pair">
+    <figure><img src="media/case_13_official.jpg" loading="lazy" alt="official 13"/><figcaption>official</figcaption></figure>
+    <figure><img src="media/case_13_opening.jpg" loading="lazy" alt="opening 13"/><figcaption>opening</figcaption></figure>
+  </div>
+  <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.000</span> <span class="ok">cy=0.019</span> <span class="ok">area=0.041</span> <span class="ok">hz=0.003</span></div>
+</article>
+<article class="card" id="c14">
+  <header><strong>#14</strong> L4</header>
+  <div class="pair">
+    <figure><img src="media/case_14_official.jpg" loading="lazy" alt="official 14"/><figcaption>official</figcaption></figure>
+    <figure><img src="media/case_14_opening.jpg" loading="lazy" alt="opening 14"/><figcaption>opening</figcaption></figure>
+  </div>
+  <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.005</span> <span class="ok">cy=0.008</span> <span class="ok">area=0.050</span> <span class="ok">hz=0.000</span></div>
+</article>
 <article class="card" id="c15">
   <header><strong>#15</strong> L4</header>
   <div class="pair">
@@ -85,6 +131,14 @@ figcaption{font-size:11px;color:var(--muted);margin-top:2px}
     <figure><img src="media/case_15_opening.jpg" loading="lazy" alt="opening 15"/><figcaption>opening</figcaption></figure>
   </div>
   <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.007</span> <span class="ok">cy=0.014</span> <span class="ok">area=0.047</span> <span class="ok">hz=0.033</span></div>
+</article>
+<article class="card" id="c16">
+  <header><strong>#16</strong> L4</header>
+  <div class="pair">
+    <figure><img src="media/case_16_official.jpg" loading="lazy" alt="official 16"/><figcaption>official</figcaption></figure>
+    <figure><img src="media/case_16_opening.jpg" loading="lazy" alt="opening 16"/><figcaption>opening</figcaption></figure>
+  </div>
+  <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.002</span> <span class="ok">cy=0.018</span> <span class="ok">area=0.083</span> <span class="ok">hz=0.014</span></div>
 </article>
 <article class="card" id="c17">
   <header><strong>#17</strong> L1</header>
@@ -109,6 +163,30 @@ figcaption{font-size:11px;color:var(--muted);margin-top:2px}
     <figure><img src="media/case_19_opening.jpg" loading="lazy" alt="opening 19"/><figcaption>opening</figcaption></figure>
   </div>
   <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.001</span> <span class="ok">cy=0.001</span> <span class="ok">area=0.159</span> <span class="ok">hz=0.017</span></div>
+</article>
+<article class="card" id="c20">
+  <header><strong>#20</strong> L2</header>
+  <div class="pair">
+    <figure><img src="media/case_20_official.jpg" loading="lazy" alt="official 20"/><figcaption>official</figcaption></figure>
+    <figure><img src="media/case_20_opening.jpg" loading="lazy" alt="opening 20"/><figcaption>opening</figcaption></figure>
+  </div>
+  <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.002</span> <span class="ok">cy=0.033</span> <span class="ok">area=0.250</span> <span class="ok">hz=0.014</span></div>
+</article>
+<article class="card" id="c21">
+  <header><strong>#21</strong> L1</header>
+  <div class="pair">
+    <figure><img src="media/case_21_official.jpg" loading="lazy" alt="official 21"/><figcaption>official</figcaption></figure>
+    <figure><img src="media/case_21_opening.jpg" loading="lazy" alt="opening 21"/><figcaption>opening</figcaption></figure>
+  </div>
+  <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.002</span> <span class="ok">cy=0.069</span> <span class="ok">area=0.053</span> <span class="ok">hz=0.053</span></div>
+</article>
+<article class="card" id="c22">
+  <header><strong>#22</strong> L4</header>
+  <div class="pair">
+    <figure><img src="media/case_22_official.jpg" loading="lazy" alt="official 22"/><figcaption>official</figcaption></figure>
+    <figure><img src="media/case_22_opening.jpg" loading="lazy" alt="opening 22"/><figcaption>opening</figcaption></figure>
+  </div>
+  <div class="meta"><span class="ok">PASS</span></div>
 </article>
 <article class="card" id="c23">
   <header><strong>#23</strong> L4</header>
@@ -189,6 +267,14 @@ figcaption{font-size:11px;color:var(--muted);margin-top:2px}
     <figure><img src="media/case_32_opening.jpg" loading="lazy" alt="opening 32"/><figcaption>opening</figcaption></figure>
   </div>
   <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.002</span> <span class="ok">cy=0.010</span> <span class="ok">area=0.123</span> <span class="ok">hz=0.039</span></div>
+</article>
+<article class="card" id="c33">
+  <header><strong>#33</strong> L1</header>
+  <div class="pair">
+    <figure><img src="media/case_33_official.jpg" loading="lazy" alt="official 33"/><figcaption>official</figcaption></figure>
+    <figure><img src="media/case_33_opening.jpg" loading="lazy" alt="opening 33"/><figcaption>opening</figcaption></figure>
+  </div>
+  <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.000</span> <span class="ok">cy=0.019</span> <span class="ok">area=0.041</span> <span class="ok">hz=0.036</span></div>
 </article>
 <article class="card" id="c34">
   <header><strong>#34</strong> L2</header>
@@ -277,6 +363,14 @@ figcaption{font-size:11px;color:var(--muted);margin-top:2px}
     <figure><img src="media/case_44_opening.jpg" loading="lazy" alt="opening 44"/><figcaption>opening</figcaption></figure>
   </div>
   <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.004</span> <span class="ok">cy=0.003</span> <span class="ok">area=0.153</span> <span class="ok">hz=0.017</span></div>
+</article>
+<article class="card" id="c45">
+  <header><strong>#45</strong> L3</header>
+  <div class="pair">
+    <figure><img src="media/case_45_official.jpg" loading="lazy" alt="official 45"/><figcaption>official</figcaption></figure>
+    <figure><img src="media/case_45_opening.jpg" loading="lazy" alt="opening 45"/><figcaption>opening</figcaption></figure>
+  </div>
+  <div class="meta"><span class="ok">PASS</span></div>
 </article>
 <article class="card" id="c46">
   <header><strong>#46</strong> L1</header>
@@ -374,6 +468,14 @@ figcaption{font-size:11px;color:var(--muted);margin-top:2px}
   </div>
   <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.000</span> <span class="ok">cy=0.019</span> <span class="ok">area=0.041</span> <span class="ok">hz=0.050</span></div>
 </article>
+<article class="card" id="c58">
+  <header><strong>#58</strong> L2</header>
+  <div class="pair">
+    <figure><img src="media/case_58_official.jpg" loading="lazy" alt="official 58"/><figcaption>official</figcaption></figure>
+    <figure><img src="media/case_58_opening.jpg" loading="lazy" alt="opening 58"/><figcaption>opening</figcaption></figure>
+  </div>
+  <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.014</span> <span class="ok">cy=0.018</span> <span class="ok">area=0.001</span> <span class="ok">hz=0.008</span></div>
+</article>
 <article class="card" id="c59">
   <header><strong>#59</strong> L1</header>
   <div class="pair">
@@ -390,6 +492,14 @@ figcaption{font-size:11px;color:var(--muted);margin-top:2px}
   </div>
   <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.029</span> <span class="ok">cy=0.025</span> <span class="ok">area=0.094</span> <span class="ok">hz=0.019</span></div>
 </article>
+<article class="card" id="c61">
+  <header><strong>#61</strong> L3</header>
+  <div class="pair">
+    <figure><img src="media/case_61_official.jpg" loading="lazy" alt="official 61"/><figcaption>official</figcaption></figure>
+    <figure><img src="media/case_61_opening.jpg" loading="lazy" alt="opening 61"/><figcaption>opening</figcaption></figure>
+  </div>
+  <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.004</span> <span class="ok">cy=0.021</span> <span class="ok">area=0.057</span> <span class="ok">hz=0.031</span></div>
+</article>
 <article class="card" id="c62">
   <header><strong>#62</strong> L4</header>
   <div class="pair">
@@ -397,6 +507,14 @@ figcaption{font-size:11px;color:var(--muted);margin-top:2px}
     <figure><img src="media/case_62_opening.jpg" loading="lazy" alt="opening 62"/><figcaption>opening</figcaption></figure>
   </div>
   <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.001</span> <span class="ok">cy=0.025</span> <span class="ok">area=0.153</span> <span class="ok">hz=0.019</span></div>
+</article>
+<article class="card" id="c63">
+  <header><strong>#63</strong> L3</header>
+  <div class="pair">
+    <figure><img src="media/case_63_official.jpg" loading="lazy" alt="official 63"/><figcaption>official</figcaption></figure>
+    <figure><img src="media/case_63_opening.jpg" loading="lazy" alt="opening 63"/><figcaption>opening</figcaption></figure>
+  </div>
+  <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.002</span> <span class="ok">cy=0.001</span> <span class="ok">area=0.162</span> <span class="ok">hz=0.011</span></div>
 </article>
 <article class="card" id="c64">
   <header><strong>#64</strong> L1</header>
@@ -437,6 +555,14 @@ figcaption{font-size:11px;color:var(--muted);margin-top:2px}
     <figure><img src="media/case_68_opening.jpg" loading="lazy" alt="opening 68"/><figcaption>opening</figcaption></figure>
   </div>
   <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.001</span> <span class="ok">cy=0.003</span> <span class="ok">area=0.149</span> <span class="ok">hz=0.025</span></div>
+</article>
+<article class="card" id="c69">
+  <header><strong>#69</strong> L2</header>
+  <div class="pair">
+    <figure><img src="media/case_69_official.jpg" loading="lazy" alt="official 69"/><figcaption>official</figcaption></figure>
+    <figure><img src="media/case_69_opening.jpg" loading="lazy" alt="opening 69"/><figcaption>opening</figcaption></figure>
+  </div>
+  <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.002</span> <span class="ok">cy=0.007</span> <span class="ok">area=0.127</span> <span class="ok">hz=0.053</span></div>
 </article>
 <article class="card" id="c70">
   <header><strong>#70</strong> L3</header>
@@ -614,6 +740,22 @@ figcaption{font-size:11px;color:var(--muted);margin-top:2px}
   </div>
   <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.000</span> <span class="ok">cy=0.019</span> <span class="ok">area=0.041</span> <span class="ok">hz=0.008</span></div>
 </article>
+<article class="card" id="c92">
+  <header><strong>#92</strong> L1</header>
+  <div class="pair">
+    <figure><img src="media/case_92_official.jpg" loading="lazy" alt="official 92"/><figcaption>official</figcaption></figure>
+    <figure><img src="media/case_92_opening.jpg" loading="lazy" alt="opening 92"/><figcaption>opening</figcaption></figure>
+  </div>
+  <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.002</span> <span class="ok">cy=0.006</span> <span class="ok">area=0.152</span> <span class="ok">hz=0.053</span></div>
+</article>
+<article class="card" id="c93">
+  <header><strong>#93</strong> L2</header>
+  <div class="pair">
+    <figure><img src="media/case_93_official.jpg" loading="lazy" alt="official 93"/><figcaption>official</figcaption></figure>
+    <figure><img src="media/case_93_opening.jpg" loading="lazy" alt="opening 93"/><figcaption>opening</figcaption></figure>
+  </div>
+  <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.002</span> <span class="ok">cy=0.006</span> <span class="ok">area=0.155</span> <span class="ok">hz=0.014</span></div>
+</article>
 <article class="card" id="c94">
   <header><strong>#94</strong> L3</header>
   <div class="pair">
@@ -670,6 +812,14 @@ figcaption{font-size:11px;color:var(--muted);margin-top:2px}
   </div>
   <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.000</span> <span class="ok">cy=0.019</span> <span class="ok">area=0.041</span> <span class="ok">hz=0.036</span></div>
 </article>
+<article class="card" id="c101">
+  <header><strong>#101</strong> L2</header>
+  <div class="pair">
+    <figure><img src="media/case_101_official.jpg" loading="lazy" alt="official 101"/><figcaption>official</figcaption></figure>
+    <figure><img src="media/case_101_opening.jpg" loading="lazy" alt="opening 101"/><figcaption>opening</figcaption></figure>
+  </div>
+  <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.002</span> <span class="ok">cy=0.006</span> <span class="ok">area=0.153</span> <span class="ok">hz=0.003</span></div>
+</article>
 <article class="card" id="c102">
   <header><strong>#102</strong> L3</header>
   <div class="pair">
@@ -677,6 +827,14 @@ figcaption{font-size:11px;color:var(--muted);margin-top:2px}
     <figure><img src="media/case_102_opening.jpg" loading="lazy" alt="opening 102"/><figcaption>opening</figcaption></figure>
   </div>
   <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.000</span> <span class="ok">cy=0.019</span> <span class="ok">area=0.041</span> <span class="ok">hz=0.003</span></div>
+</article>
+<article class="card" id="c103">
+  <header><strong>#103</strong> L4</header>
+  <div class="pair">
+    <figure><img src="media/case_103_official.jpg" loading="lazy" alt="official 103"/><figcaption>official</figcaption></figure>
+    <figure><img src="media/case_103_opening.jpg" loading="lazy" alt="opening 103"/><figcaption>opening</figcaption></figure>
+  </div>
+  <div class="meta"><span class="bad">FAIL</span> <span class="ok">cx=0.002</span> <span class="ok">cy=0.064</span> <span class="ok">area=0.045</span> <span class="bad">hz=0.067</span></div>
 </article>
 <article class="card" id="c104">
   <header><strong>#104</strong> L1</header>
@@ -694,8 +852,8 @@ figcaption{font-size:11px;color:var(--muted);margin-top:2px}
   </div>
   <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.002</span> <span class="ok">cy=0.000</span> <span class="ok">area=0.161</span> <span class="ok">hz=0.039</span></div>
 </article>
-<article class="card newcard" id="c106">
-  <header><strong>#106</strong> L3 <span class="new">NEW</span></header>
+<article class="card" id="c106">
+  <header><strong>#106</strong> L3</header>
   <div class="pair">
     <figure><img src="media/case_106_official.jpg" loading="lazy" alt="official 106"/><figcaption>official</figcaption></figure>
     <figure><img src="media/case_106_opening.jpg" loading="lazy" alt="opening 106"/><figcaption>opening</figcaption></figure>
@@ -726,8 +884,8 @@ figcaption{font-size:11px;color:var(--muted);margin-top:2px}
   </div>
   <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.067</span> <span class="ok">cy=0.031</span> <span class="ok">area=0.158</span> <span class="ok">hz=0.019</span></div>
 </article>
-<article class="card newcard" id="c110">
-  <header><strong>#110</strong> L3 <span class="new">NEW</span></header>
+<article class="card" id="c110">
+  <header><strong>#110</strong> L3</header>
   <div class="pair">
     <figure><img src="media/case_110_official.jpg" loading="lazy" alt="official 110"/><figcaption>official</figcaption></figure>
     <figure><img src="media/case_110_opening.jpg" loading="lazy" alt="opening 110"/><figcaption>opening</figcaption></figure>
@@ -742,8 +900,8 @@ figcaption{font-size:11px;color:var(--muted);margin-top:2px}
   </div>
   <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.002</span> <span class="ok">cy=0.000</span> <span class="ok">area=0.164</span> <span class="ok">hz=0.039</span></div>
 </article>
-<article class="card newcard" id="c112">
-  <header><strong>#112</strong> L1 <span class="new">NEW</span></header>
+<article class="card" id="c112">
+  <header><strong>#112</strong> L1</header>
   <div class="pair">
     <figure><img src="media/case_112_official.jpg" loading="lazy" alt="official 112"/><figcaption>official</figcaption></figure>
     <figure><img src="media/case_112_opening.jpg" loading="lazy" alt="opening 112"/><figcaption>opening</figcaption></figure>
@@ -758,8 +916,8 @@ figcaption{font-size:11px;color:var(--muted);margin-top:2px}
   </div>
   <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.002</span> <span class="ok">cy=0.037</span> <span class="ok">area=0.002</span> <span class="ok">hz=0.031</span></div>
 </article>
-<article class="card newcard" id="c114">
-  <header><strong>#114</strong> L3 <span class="new">NEW</span></header>
+<article class="card" id="c114">
+  <header><strong>#114</strong> L3</header>
   <div class="pair">
     <figure><img src="media/case_114_official.jpg" loading="lazy" alt="official 114"/><figcaption>official</figcaption></figure>
     <figure><img src="media/case_114_opening.jpg" loading="lazy" alt="opening 114"/><figcaption>opening</figcaption></figure>
@@ -774,8 +932,8 @@ figcaption{font-size:11px;color:var(--muted);margin-top:2px}
   </div>
   <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.002</span> <span class="ok">cy=0.022</span> <span class="ok">area=0.160</span> <span class="ok">hz=0.047</span></div>
 </article>
-<article class="card newcard" id="c116">
-  <header><strong>#116</strong> L1 <span class="new">NEW</span></header>
+<article class="card" id="c116">
+  <header><strong>#116</strong> L1</header>
   <div class="pair">
     <figure><img src="media/case_116_official.jpg" loading="lazy" alt="official 116"/><figcaption>official</figcaption></figure>
     <figure><img src="media/case_116_opening.jpg" loading="lazy" alt="opening 116"/><figcaption>opening</figcaption></figure>
@@ -790,8 +948,8 @@ figcaption{font-size:11px;color:var(--muted);margin-top:2px}
   </div>
   <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.013</span> <span class="ok">cy=0.010</span> <span class="ok">area=0.203</span> <span class="ok">hz=0.036</span></div>
 </article>
-<article class="card newcard" id="c118">
-  <header><strong>#118</strong> L3 <span class="new">NEW</span></header>
+<article class="card" id="c118">
+  <header><strong>#118</strong> L3</header>
   <div class="pair">
     <figure><img src="media/case_118_official.jpg" loading="lazy" alt="official 118"/><figcaption>official</figcaption></figure>
     <figure><img src="media/case_118_opening.jpg" loading="lazy" alt="opening 118"/><figcaption>opening</figcaption></figure>
@@ -806,8 +964,8 @@ figcaption{font-size:11px;color:var(--muted);margin-top:2px}
   </div>
   <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.002</span> <span class="ok">cy=0.001</span> <span class="ok">area=0.088</span> <span class="ok">hz=0.003</span></div>
 </article>
-<article class="card newcard" id="c120">
-  <header><strong>#120</strong> L1 <span class="new">NEW</span></header>
+<article class="card" id="c120">
+  <header><strong>#120</strong> L1</header>
   <div class="pair">
     <figure><img src="media/case_120_official.jpg" loading="lazy" alt="official 120"/><figcaption>official</figcaption></figure>
     <figure><img src="media/case_120_opening.jpg" loading="lazy" alt="opening 120"/><figcaption>opening</figcaption></figure>
@@ -822,6 +980,38 @@ figcaption{font-size:11px;color:var(--muted);margin-top:2px}
   </div>
   <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.001</span> <span class="ok">cy=0.003</span> <span class="ok">area=0.150</span> <span class="ok">hz=0.006</span></div>
 </article>
+<article class="card" id="c122">
+  <header><strong>#122</strong> L3</header>
+  <div class="pair">
+    <figure><img src="media/case_122_official.jpg" loading="lazy" alt="official 122"/><figcaption>official</figcaption></figure>
+    <figure><img src="media/case_122_opening.jpg" loading="lazy" alt="opening 122"/><figcaption>opening</figcaption></figure>
+  </div>
+  <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.002</span> <span class="ok">cy=0.054</span> <span class="ok">area=0.154</span> <span class="ok">hz=0.011</span></div>
+</article>
+<article class="card" id="c123">
+  <header><strong>#123</strong> L4</header>
+  <div class="pair">
+    <figure><img src="media/case_123_official.jpg" loading="lazy" alt="official 123"/><figcaption>official</figcaption></figure>
+    <figure><img src="media/case_123_opening.jpg" loading="lazy" alt="opening 123"/><figcaption>opening</figcaption></figure>
+  </div>
+  <div class="meta"><span class="bad">FAIL</span> <span class="ok">cx=0.002</span> <span class="ok">cy=0.050</span> <span class="ok">area=0.244</span> <span class="bad">hz=0.142</span></div>
+</article>
+<article class="card" id="c124">
+  <header><strong>#124</strong> L1</header>
+  <div class="pair">
+    <figure><img src="media/case_124_official.jpg" loading="lazy" alt="official 124"/><figcaption>official</figcaption></figure>
+    <figure><img src="media/case_124_opening.jpg" loading="lazy" alt="opening 124"/><figcaption>opening</figcaption></figure>
+  </div>
+  <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.002</span> <span class="ok">cy=0.000</span> <span class="ok">area=0.161</span> <span class="ok">hz=0.028</span></div>
+</article>
+<article class="card" id="c136">
+  <header><strong>#136</strong> L1</header>
+  <div class="pair">
+    <figure><img src="media/case_136_official.jpg" loading="lazy" alt="official 136"/><figcaption>official</figcaption></figure>
+    <figure><img src="media/case_136_opening.jpg" loading="lazy" alt="opening 136"/><figcaption>opening</figcaption></figure>
+  </div>
+  <div class="meta"><span class="ok">PASS</span></div>
+</article>
 <article class="card" id="c137">
   <header><strong>#137</strong> L2</header>
   <div class="pair">
@@ -830,53 +1020,277 @@ figcaption{font-size:11px;color:var(--muted);margin-top:2px}
   </div>
   <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.002</span> <span class="ok">cy=0.019</span> <span class="ok">area=0.157</span> <span class="ok">hz=0.000</span></div>
 </article>
-<article class="card newcard" id="c141">
-  <header><strong>#141</strong> L4 <span class="new">NEW</span></header>
+<article class="card" id="c140">
+  <header><strong>#140</strong> L3</header>
+  <div class="pair">
+    <figure><img src="media/case_140_official.jpg" loading="lazy" alt="official 140"/><figcaption>official</figcaption></figure>
+    <figure><img src="media/case_140_opening.jpg" loading="lazy" alt="opening 140"/><figcaption>opening</figcaption></figure>
+  </div>
+  <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.019</span> <span class="ok">cy=0.051</span> <span class="ok">area=0.114</span> <span class="ok">hz=0.011</span></div>
+</article>
+<article class="card" id="c141">
+  <header><strong>#141</strong> L4</header>
   <div class="pair">
     <figure><img src="media/case_141_official.jpg" loading="lazy" alt="official 141"/><figcaption>official</figcaption></figure>
     <figure><img src="media/case_141_opening.jpg" loading="lazy" alt="opening 141"/><figcaption>opening</figcaption></figure>
   </div>
   <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.073</span> <span class="ok">cy=0.025</span> <span class="ok">area=0.135</span> <span class="ok">hz=0.006</span></div>
 </article>
-<article class="card newcard" id="c143">
-  <header><strong>#143</strong> L2 <span class="new">NEW</span></header>
+<article class="card" id="c142">
+  <header><strong>#142</strong> L1</header>
+  <div class="pair">
+    <figure><img src="media/case_142_official.jpg" loading="lazy" alt="official 142"/><figcaption>official</figcaption></figure>
+    <figure><img src="media/case_142_opening.jpg" loading="lazy" alt="opening 142"/><figcaption>opening</figcaption></figure>
+  </div>
+  <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.001</span> <span class="ok">cy=0.003</span> <span class="ok">area=0.165</span> <span class="ok">hz=0.031</span></div>
+</article>
+<article class="card" id="c143">
+  <header><strong>#143</strong> L2</header>
   <div class="pair">
     <figure><img src="media/case_143_official.jpg" loading="lazy" alt="official 143"/><figcaption>official</figcaption></figure>
     <figure><img src="media/case_143_opening.jpg" loading="lazy" alt="opening 143"/><figcaption>opening</figcaption></figure>
   </div>
   <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.000</span> <span class="ok">cy=0.029</span> <span class="ok">area=0.174</span> <span class="ok">hz=0.003</span></div>
 </article>
-<article class="card newcard" id="c145">
-  <header><strong>#145</strong> L4 <span class="new">NEW</span></header>
+<article class="card" id="c144">
+  <header><strong>#144</strong> L3</header>
+  <div class="pair">
+    <figure><img src="media/case_144_official.jpg" loading="lazy" alt="official 144"/><figcaption>official</figcaption></figure>
+    <figure><img src="media/case_144_opening.jpg" loading="lazy" alt="opening 144"/><figcaption>opening</figcaption></figure>
+  </div>
+  <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.002</span> <span class="ok">cy=0.001</span> <span class="ok">area=0.162</span> <span class="ok">hz=0.019</span></div>
+</article>
+<article class="card" id="c145">
+  <header><strong>#145</strong> L4</header>
   <div class="pair">
     <figure><img src="media/case_145_official.jpg" loading="lazy" alt="official 145"/><figcaption>official</figcaption></figure>
     <figure><img src="media/case_145_opening.jpg" loading="lazy" alt="opening 145"/><figcaption>opening</figcaption></figure>
   </div>
   <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.000</span> <span class="ok">cy=0.001</span> <span class="ok">area=0.003</span> <span class="ok">hz=0.042</span></div>
 </article>
-<article class="card newcard" id="c147">
-  <header><strong>#147</strong> L2 <span class="new">NEW</span></header>
+<article class="card" id="c146">
+  <header><strong>#146</strong> L1</header>
+  <div class="pair">
+    <figure><img src="media/case_146_official.jpg" loading="lazy" alt="official 146"/><figcaption>official</figcaption></figure>
+    <figure><img src="media/case_146_opening.jpg" loading="lazy" alt="opening 146"/><figcaption>opening</figcaption></figure>
+  </div>
+  <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.000</span> <span class="ok">cy=0.019</span> <span class="ok">area=0.041</span> <span class="ok">hz=0.050</span></div>
+</article>
+<article class="card" id="c147">
+  <header><strong>#147</strong> L2</header>
   <div class="pair">
     <figure><img src="media/case_147_official.jpg" loading="lazy" alt="official 147"/><figcaption>official</figcaption></figure>
     <figure><img src="media/case_147_opening.jpg" loading="lazy" alt="opening 147"/><figcaption>opening</figcaption></figure>
   </div>
   <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.002</span> <span class="ok">cy=0.017</span> <span class="ok">area=0.221</span> <span class="ok">hz=0.019</span></div>
 </article>
-<article class="card newcard" id="c151">
-  <header><strong>#151</strong> L4 <span class="new">NEW</span></header>
+<article class="card" id="c149">
+  <header><strong>#149</strong> L3</header>
+  <div class="pair">
+    <figure><img src="media/case_149_official.jpg" loading="lazy" alt="official 149"/><figcaption>official</figcaption></figure>
+    <figure><img src="media/case_149_opening.jpg" loading="lazy" alt="opening 149"/><figcaption>opening</figcaption></figure>
+  </div>
+  <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.001</span> <span class="ok">cy=0.050</span> <span class="ok">area=0.159</span> <span class="ok">hz=0.000</span></div>
+</article>
+<article class="card" id="c151">
+  <header><strong>#151</strong> L4</header>
   <div class="pair">
     <figure><img src="media/case_151_official.jpg" loading="lazy" alt="official 151"/><figcaption>official</figcaption></figure>
     <figure><img src="media/case_151_opening.jpg" loading="lazy" alt="opening 151"/><figcaption>opening</figcaption></figure>
   </div>
   <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.001</span> <span class="ok">cy=0.013</span> <span class="ok">area=0.155</span> <span class="ok">hz=0.022</span></div>
 </article>
-<article class="card newcard" id="c158">
-  <header><strong>#158</strong> L2 <span class="new">NEW</span></header>
+<article class="card" id="c155">
+  <header><strong>#155</strong> L4</header>
+  <div class="pair">
+    <figure><img src="media/case_155_official.jpg" loading="lazy" alt="official 155"/><figcaption>official</figcaption></figure>
+    <figure><img src="media/case_155_opening.jpg" loading="lazy" alt="opening 155"/><figcaption>opening</figcaption></figure>
+  </div>
+  <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.000</span> <span class="ok">cy=0.001</span> <span class="ok">area=0.034</span> <span class="ok">hz=0.003</span></div>
+</article>
+<article class="card" id="c156">
+  <header><strong>#156</strong> L1</header>
+  <div class="pair">
+    <figure><img src="media/case_156_official.jpg" loading="lazy" alt="official 156"/><figcaption>official</figcaption></figure>
+    <figure><img src="media/case_156_opening.jpg" loading="lazy" alt="opening 156"/><figcaption>opening</figcaption></figure>
+  </div>
+  <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.001</span> <span class="ok">cy=0.013</span> <span class="ok">area=0.101</span> <span class="ok">hz=0.039</span></div>
+</article>
+<article class="card" id="c157">
+  <header><strong>#157</strong> L1</header>
+  <div class="pair">
+    <figure><img src="media/case_157_official.jpg" loading="lazy" alt="official 157"/><figcaption>official</figcaption></figure>
+    <figure><img src="media/case_157_opening.jpg" loading="lazy" alt="opening 157"/><figcaption>opening</figcaption></figure>
+  </div>
+  <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.009</span> <span class="ok">cy=0.010</span> <span class="ok">area=0.016</span> <span class="ok">hz=0.042</span></div>
+</article>
+<article class="card" id="c158">
+  <header><strong>#158</strong> L2</header>
   <div class="pair">
     <figure><img src="media/case_158_official.jpg" loading="lazy" alt="official 158"/><figcaption>official</figcaption></figure>
     <figure><img src="media/case_158_opening.jpg" loading="lazy" alt="opening 158"/><figcaption>opening</figcaption></figure>
   </div>
   <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.000</span> <span class="ok">cy=0.019</span> <span class="ok">area=0.041</span> <span class="ok">hz=0.011</span></div>
+</article>
+<article class="card" id="c159">
+  <header><strong>#159</strong> L2</header>
+  <div class="pair">
+    <figure><img src="media/case_159_official.jpg" loading="lazy" alt="official 159"/><figcaption>official</figcaption></figure>
+    <figure><img src="media/case_159_opening.jpg" loading="lazy" alt="opening 159"/><figcaption>opening</figcaption></figure>
+  </div>
+  <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.005</span> <span class="ok">cy=0.024</span> <span class="ok">area=0.181</span> <span class="ok">hz=0.050</span></div>
+</article>
+<article class="card" id="c160">
+  <header><strong>#160</strong> L3</header>
+  <div class="pair">
+    <figure><img src="media/case_160_official.jpg" loading="lazy" alt="official 160"/><figcaption>official</figcaption></figure>
+    <figure><img src="media/case_160_opening.jpg" loading="lazy" alt="opening 160"/><figcaption>opening</figcaption></figure>
+  </div>
+  <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.000</span> <span class="ok">cy=0.019</span> <span class="ok">area=0.041</span> <span class="ok">hz=0.019</span></div>
+</article>
+<article class="card" id="c161">
+  <header><strong>#161</strong> L4</header>
+  <div class="pair">
+    <figure><img src="media/case_161_official.jpg" loading="lazy" alt="official 161"/><figcaption>official</figcaption></figure>
+    <figure><img src="media/case_161_opening.jpg" loading="lazy" alt="opening 161"/><figcaption>opening</figcaption></figure>
+  </div>
+  <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.002</span> <span class="ok">cy=0.076</span> <span class="ok">area=0.158</span> <span class="ok">hz=0.008</span></div>
+</article>
+<article class="card" id="c163">
+  <header><strong>#163</strong> L1</header>
+  <div class="pair">
+    <figure><img src="media/case_163_official.jpg" loading="lazy" alt="official 163"/><figcaption>official</figcaption></figure>
+    <figure><img src="media/case_163_opening.jpg" loading="lazy" alt="opening 163"/><figcaption>opening</figcaption></figure>
+  </div>
+  <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.001</span> <span class="ok">cy=0.003</span> <span class="ok">area=0.146</span> <span class="ok">hz=0.022</span></div>
+</article>
+<article class="card" id="c165">
+  <header><strong>#165</strong> L2</header>
+  <div class="pair">
+    <figure><img src="media/case_165_official.jpg" loading="lazy" alt="official 165"/><figcaption>official</figcaption></figure>
+    <figure><img src="media/case_165_opening.jpg" loading="lazy" alt="opening 165"/><figcaption>opening</figcaption></figure>
+  </div>
+  <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.000</span> <span class="ok">cy=0.019</span> <span class="ok">area=0.041</span> <span class="ok">hz=0.047</span></div>
+</article>
+<article class="card" id="c166">
+  <header><strong>#166</strong> L3</header>
+  <div class="pair">
+    <figure><img src="media/case_166_official.jpg" loading="lazy" alt="official 166"/><figcaption>official</figcaption></figure>
+    <figure><img src="media/case_166_opening.jpg" loading="lazy" alt="opening 166"/><figcaption>opening</figcaption></figure>
+  </div>
+  <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.002</span> <span class="ok">cy=0.029</span> <span class="ok">area=0.099</span> <span class="ok">hz=0.050</span></div>
+</article>
+<article class="card" id="c167">
+  <header><strong>#167</strong> L3</header>
+  <div class="pair">
+    <figure><img src="media/case_167_official.jpg" loading="lazy" alt="official 167"/><figcaption>official</figcaption></figure>
+    <figure><img src="media/case_167_opening.jpg" loading="lazy" alt="opening 167"/><figcaption>opening</figcaption></figure>
+  </div>
+  <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.077</span> <span class="ok">cy=0.011</span> <span class="ok">area=0.245</span> <span class="ok">hz=0.058</span></div>
+</article>
+<article class="card" id="c168">
+  <header><strong>#168</strong> L4</header>
+  <div class="pair">
+    <figure><img src="media/case_168_official.jpg" loading="lazy" alt="official 168"/><figcaption>official</figcaption></figure>
+    <figure><img src="media/case_168_opening.jpg" loading="lazy" alt="opening 168"/><figcaption>opening</figcaption></figure>
+  </div>
+  <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.019</span> <span class="ok">cy=0.025</span> <span class="ok">area=0.098</span> <span class="ok">hz=0.039</span></div>
+</article>
+<article class="card" id="c169">
+  <header><strong>#169</strong> L1</header>
+  <div class="pair">
+    <figure><img src="media/case_169_official.jpg" loading="lazy" alt="official 169"/><figcaption>official</figcaption></figure>
+    <figure><img src="media/case_169_opening.jpg" loading="lazy" alt="opening 169"/><figcaption>opening</figcaption></figure>
+  </div>
+  <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.000</span> <span class="ok">cy=0.019</span> <span class="ok">area=0.041</span> <span class="ok">hz=0.042</span></div>
+</article>
+<article class="card" id="c170">
+  <header><strong>#170</strong> L2</header>
+  <div class="pair">
+    <figure><img src="media/case_170_official.jpg" loading="lazy" alt="official 170"/><figcaption>official</figcaption></figure>
+    <figure><img src="media/case_170_opening.jpg" loading="lazy" alt="opening 170"/><figcaption>opening</figcaption></figure>
+  </div>
+  <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.003</span> <span class="ok">cy=0.050</span> <span class="ok">area=0.005</span> <span class="ok">hz=0.017</span></div>
+</article>
+<article class="card" id="c171">
+  <header><strong>#171</strong> L3</header>
+  <div class="pair">
+    <figure><img src="media/case_171_official.jpg" loading="lazy" alt="official 171"/><figcaption>official</figcaption></figure>
+    <figure><img src="media/case_171_opening.jpg" loading="lazy" alt="opening 171"/><figcaption>opening</figcaption></figure>
+  </div>
+  <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.005</span> <span class="ok">cy=0.007</span> <span class="ok">area=0.087</span> <span class="ok">hz=0.025</span></div>
+</article>
+<article class="card" id="c172">
+  <header><strong>#172</strong> L4</header>
+  <div class="pair">
+    <figure><img src="media/case_172_official.jpg" loading="lazy" alt="official 172"/><figcaption>official</figcaption></figure>
+    <figure><img src="media/case_172_opening.jpg" loading="lazy" alt="opening 172"/><figcaption>opening</figcaption></figure>
+  </div>
+  <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.000</span> <span class="ok">cy=0.019</span> <span class="ok">area=0.041</span> <span class="ok">hz=0.017</span></div>
+</article>
+<article class="card" id="c173">
+  <header><strong>#173</strong> L1</header>
+  <div class="pair">
+    <figure><img src="media/case_173_official.jpg" loading="lazy" alt="official 173"/><figcaption>official</figcaption></figure>
+    <figure><img src="media/case_173_opening.jpg" loading="lazy" alt="opening 173"/><figcaption>opening</figcaption></figure>
+  </div>
+  <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.000</span> <span class="ok">cy=0.024</span> <span class="ok">area=0.045</span> <span class="ok">hz=0.042</span></div>
+</article>
+<article class="card" id="c175">
+  <header><strong>#175</strong> L2</header>
+  <div class="pair">
+    <figure><img src="media/case_175_official.jpg" loading="lazy" alt="official 175"/><figcaption>official</figcaption></figure>
+    <figure><img src="media/case_175_opening.jpg" loading="lazy" alt="opening 175"/><figcaption>opening</figcaption></figure>
+  </div>
+  <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.000</span> <span class="ok">cy=0.019</span> <span class="ok">area=0.041</span> <span class="ok">hz=0.056</span></div>
+</article>
+<article class="card" id="c176">
+  <header><strong>#176</strong> L3</header>
+  <div class="pair">
+    <figure><img src="media/case_176_official.jpg" loading="lazy" alt="official 176"/><figcaption>official</figcaption></figure>
+    <figure><img src="media/case_176_opening.jpg" loading="lazy" alt="opening 176"/><figcaption>opening</figcaption></figure>
+  </div>
+  <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.030</span> <span class="ok">cy=0.007</span> <span class="ok">area=0.147</span> <span class="ok">hz=0.050</span></div>
+</article>
+<article class="card" id="c177">
+  <header><strong>#177</strong> L4</header>
+  <div class="pair">
+    <figure><img src="media/case_177_official.jpg" loading="lazy" alt="official 177"/><figcaption>official</figcaption></figure>
+    <figure><img src="media/case_177_opening.jpg" loading="lazy" alt="opening 177"/><figcaption>opening</figcaption></figure>
+  </div>
+  <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.000</span> <span class="ok">cy=0.019</span> <span class="ok">area=0.041</span> <span class="ok">hz=0.031</span></div>
+</article>
+<article class="card" id="c178">
+  <header><strong>#178</strong> L1</header>
+  <div class="pair">
+    <figure><img src="media/case_178_official.jpg" loading="lazy" alt="official 178"/><figcaption>official</figcaption></figure>
+    <figure><img src="media/case_178_opening.jpg" loading="lazy" alt="opening 178"/><figcaption>opening</figcaption></figure>
+  </div>
+  <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.031</span> <span class="ok">cy=0.019</span> <span class="ok">area=0.122</span> <span class="ok">hz=0.042</span></div>
+</article>
+<article class="card" id="c179">
+  <header><strong>#179</strong> L2</header>
+  <div class="pair">
+    <figure><img src="media/case_179_official.jpg" loading="lazy" alt="official 179"/><figcaption>official</figcaption></figure>
+    <figure><img src="media/case_179_opening.jpg" loading="lazy" alt="opening 179"/><figcaption>opening</figcaption></figure>
+  </div>
+  <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.002</span> <span class="ok">cy=0.019</span> <span class="ok">area=0.196</span> <span class="ok">hz=0.019</span></div>
+</article>
+<article class="card" id="c184">
+  <header><strong>#184</strong> L3</header>
+  <div class="pair">
+    <figure><img src="media/case_184_official.jpg" loading="lazy" alt="official 184"/><figcaption>official</figcaption></figure>
+    <figure><img src="media/case_184_opening.jpg" loading="lazy" alt="opening 184"/><figcaption>opening</figcaption></figure>
+  </div>
+  <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.012</span> <span class="ok">cy=0.001</span> <span class="ok">area=0.087</span> <span class="ok">hz=0.042</span></div>
+</article>
+<article class="card" id="c195">
+  <header><strong>#195</strong> L4</header>
+  <div class="pair">
+    <figure><img src="media/case_195_official.jpg" loading="lazy" alt="official 195"/><figcaption>official</figcaption></figure>
+    <figure><img src="media/case_195_opening.jpg" loading="lazy" alt="opening 195"/><figcaption>opening</figcaption></figure>
+  </div>
+  <div class="meta"><span class="ok">PASS</span> <span class="ok">cx=0.006</span> <span class="ok">cy=0.003</span> <span class="ok">area=0.096</span> <span class="ok">hz=0.017</span></div>
 </article>
 </main>
 </body>
