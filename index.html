@@ -37,9 +37,9 @@ th { background:#0f172a; color:var(--muted); }
 <body>
 <main>
   <h1>WBench Navi 验收（158 榜）</h1>
-  <p class="lede">更新：2026-10-28 00:33 CST（Asia/Shanghai）。标准：白膜无投影 · opening-lock mae≤8 · composition_gate（cx/cy≤8% area≤25% horizon≤6%）· 人用人形 SDK。FAIL10 已收口（WBench20 页 18/2）。本页只列 Navi 新产题。</p>
+  <p class="lede">更新：2026-10-28 00:40 CST（Asia/Shanghai）。标准：白膜无投影 · opening-lock mae≤8 · composition_gate（cx/cy≤8% area≤25% horizon≤6%）· 人用人形 SDK。FAIL10 已收口（WBench20 页 18/2）。本页只列 Navi 新产题。</p>
   <div class="summary">
-    <div class="pill"><div class="label">本批构图 PASS</div><div class="value">5</div></div>
+    <div class="pill"><div class="label">本批构图 PASS</div><div class="value">9</div></div>
     <div class="pill"><div class="label">本批构图 FAIL</div><div class="value">0</div></div>
     <div class="pill"><div class="label">四路并发</div><div class="value">xxk-1..4</div></div>
     <div class="pill"><div class="label">目标</div><div class="value">158</div></div>
@@ -48,21 +48,36 @@ th { background:#0f172a; color:var(--muted); }
   <table>
     <thead><tr><th>题</th><th>Lane</th><th>门禁</th><th>cxΔ</th><th>cyΔ</th><th>area</th><th>horizonΔ</th><th>upper_fillΔ</th></tr></thead>
     <tbody>
+<tr><td>#1</td><td>L3</td><td><span class="badge comp-pass">PASS</span></td><td>0.0016</td><td>0.0125</td><td>0.2402</td><td>0.0194</td><td>0.045</td></tr>
 <tr><td>#5</td><td>L4</td><td><span class="badge comp-pass">PASS</span></td><td>0.0</td><td>0.0194</td><td>0.0406</td><td>0.0139</td><td>0.0323</td></tr>
 <tr><td>#10</td><td>L1</td><td><span class="badge comp-pass">PASS</span></td><td>0.0023</td><td>0.0167</td><td>0.1815</td><td>0.0528</td><td>0.0385</td></tr>
 <tr><td>#11</td><td>L2</td><td><span class="badge comp-pass">PASS</span></td><td>0.0016</td><td>0.0028</td><td>0.1417</td><td>0.0417</td><td>0.0103</td></tr>
 <tr><td>#15</td><td>L4</td><td><span class="badge comp-pass">PASS</span></td><td>0.007</td><td>0.0139</td><td>0.0466</td><td>0.0333</td><td>0.0804</td></tr>
 <tr><td>#17</td><td>L1</td><td><span class="badge comp-pass">PASS</span></td><td>0.0664</td><td>0.0306</td><td>0.156</td><td>0.0194</td><td>0.0736</td></tr>
-
+<tr><td>#18</td><td>L2</td><td><span class="badge comp-pass">PASS</span></td><td>0.0047</td><td>0.0417</td><td>0.0981</td><td>0.05</td><td>0.1586</td></tr>
+<tr><td>#23</td><td>L4</td><td><span class="badge comp-pass">PASS</span></td><td>0.0039</td><td>0.0181</td><td>0.0434</td><td>0.0417</td><td>0.0713</td></tr>
+<tr><td>#24</td><td>L1</td><td><span class="badge comp-pass">PASS</span></td><td>0.0016</td><td>0.0278</td><td>0.0593</td><td>0.0389</td><td>0.0689</td></tr>
     </tbody>
   </table>
   <h2 class="section-title">题卡</h2>
-  
+    <article class="card" id="case1">
+      <div class="card-head">
+        <h2>#1</h2>
+        <span class="badge comp-pass">构图 PASS</span>
+        <span class="badge ol-pass">开场锁定 PASS · mae=1.551828</span>
+        <span class="lane-tag">L3</span>
+      </div>
+      <p class="why pass">cxΔ=0.0016 cyΔ=0.0125 area_rel=0.2402 horizonΔ=0.0194 upper_fillΔ=0.045 · ACCEPT=Y · motion=Y · 白膜无投影 · official-mask gate</p>
+      <div class="pair">
+        <figure><img src="media/case_1_official.jpg" alt="official #1" loading="lazy"/><figcaption>官方首帧</figcaption></figure>
+        <figure><img src="media/case_1_opening.jpg" alt="opening #1" loading="lazy"/><figcaption>opening-gate</figcaption></figure>
+      </div>
+    </article>
     <article class="card" id="case5">
       <div class="card-head">
         <h2>#5</h2>
         <span class="badge comp-pass">构图 PASS</span>
-        <span class="badge ol-pass">开场锁定 PASS · mae=ok</span>
+        <span class="badge ol-pass">开场锁定 PASS · mae=8</span>
         <span class="lane-tag">L4</span>
       </div>
       <p class="why pass">cxΔ=0.0 cyΔ=0.0194 area_rel=0.0406 horizonΔ=0.0139 upper_fillΔ=0.0323 · ACCEPT=Y · motion=Y · 白膜无投影 · official-mask gate</p>
@@ -114,7 +129,7 @@ th { background:#0f172a; color:var(--muted); }
       <div class="card-head">
         <h2>#17</h2>
         <span class="badge comp-pass">构图 PASS</span>
-        <span class="badge ol-pass">开场锁定 PASS · mae=ok</span>
+        <span class="badge ol-pass">开场锁定 PASS · mae=.</span>
         <span class="lane-tag">L1</span>
       </div>
       <p class="why pass">cxΔ=0.0664 cyΔ=0.0306 area_rel=0.156 horizonΔ=0.0194 upper_fillΔ=0.0736 · ACCEPT=Y · motion=Y · 白膜无投影 · official-mask gate</p>
@@ -123,7 +138,45 @@ th { background:#0f172a; color:var(--muted); }
         <figure><img src="media/case_17_opening.jpg" alt="opening #17" loading="lazy"/><figcaption>opening-gate</figcaption></figure>
       </div>
     </article>
-  <p class="lede">WBench20 FAIL10 验收：<a href="https://oricter.github.io/wbench20-review-20261027/" style="color:#93c5fd">wbench20-review-20261027</a></p>
+    <article class="card" id="case18">
+      <div class="card-head">
+        <h2>#18</h2>
+        <span class="badge comp-pass">构图 PASS</span>
+        <span class="badge ol-pass">开场锁定 PASS · mae=0.8140</span>
+        <span class="lane-tag">L2</span>
+      </div>
+      <p class="why pass">cxΔ=0.0047 cyΔ=0.0417 area_rel=0.0981 horizonΔ=0.05 upper_fillΔ=0.1586 · ACCEPT=Y · motion=Y · 白膜无投影 · official-mask gate</p>
+      <div class="pair">
+        <figure><img src="media/case_18_official.jpg" alt="official #18" loading="lazy"/><figcaption>官方首帧</figcaption></figure>
+        <figure><img src="media/case_18_opening.jpg" alt="opening #18" loading="lazy"/><figcaption>opening-gate</figcaption></figure>
+      </div>
+    </article>
+    <article class="card" id="case23">
+      <div class="card-head">
+        <h2>#23</h2>
+        <span class="badge comp-pass">构图 PASS</span>
+        <span class="badge ol-pass">开场锁定 PASS · mae=0.3669</span>
+        <span class="lane-tag">L4</span>
+      </div>
+      <p class="why pass">cxΔ=0.0039 cyΔ=0.0181 area_rel=0.0434 horizonΔ=0.0417 upper_fillΔ=0.0713 · ACCEPT=Y · motion=Y · 白膜无投影 · official-mask gate</p>
+      <div class="pair">
+        <figure><img src="media/case_23_official.jpg" alt="official #23" loading="lazy"/><figcaption>官方首帧</figcaption></figure>
+        <figure><img src="media/case_23_opening.jpg" alt="opening #23" loading="lazy"/><figcaption>opening-gate</figcaption></figure>
+      </div>
+    </article>
+    <article class="card" id="case24">
+      <div class="card-head">
+        <h2>#24</h2>
+        <span class="badge comp-pass">构图 PASS</span>
+        <span class="badge ol-pass">开场锁定 PASS · mae=0.9070</span>
+        <span class="lane-tag">L1</span>
+      </div>
+      <p class="why pass">cxΔ=0.0016 cyΔ=0.0278 area_rel=0.0593 horizonΔ=0.0389 upper_fillΔ=0.0689 · ACCEPT=Y · motion=Y · 白膜无投影 · official-mask gate</p>
+      <div class="pair">
+        <figure><img src="media/case_24_official.jpg" alt="official #24" loading="lazy"/><figcaption>官方首帧</figcaption></figure>
+        <figure><img src="media/case_24_opening.jpg" alt="opening #24" loading="lazy"/><figcaption>opening-gate</figcaption></figure>
+      </div>
+    </article>
 </main>
 </body>
 </html>
