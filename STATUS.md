@@ -6,7 +6,7 @@
 - **blocked / 未跑**: []
 - **更新**: 2026-10-28 06:00 Asia/Shanghai
 - **验收**: https://oricter.github.io/wbench-navi-review-20261027/
-- **commit**: (pending push)
+- **commit**: 19b7f32e76b98616b9cd56f80fad29d8f4c4a659 (19b7f32)
 - **共享修**: depth-aware camera +X + surgical origin patch + shared edge-column official masks → flipped #61 #69 #92 #93 #101 #179; #103 remains FAIL (horizon_delta≈0.067)
 - **对照 Navi 158**: PASS 154 / FAIL 4 / producing 0 / blocked|未跑 0  (sum=158)
 
