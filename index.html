@@ -23,9 +23,9 @@ th,td { border:1px solid var(--line); padding:6px 8px; text-align:left; } th { b
 @media (max-width:700px) { .pair { grid-template-columns:1fr; } }
 </style></head><body><main>
 <h1>WBench Navi 验收（158 榜）</h1>
-<p class="lede">更新：2026-10-28 01:09 CST（Asia/Shanghai）。白膜无投影 · opening-lock mae≤8 · composition_gate · 人形 SDK。FAIL10 收口（#2/#9 FAIL）。</p>
+<p class="lede">更新：2026-10-28 01:16 CST（Asia/Shanghai）。白膜无投影 · opening-lock mae≤8 · composition_gate · 人形 SDK。FAIL10 收口（#2/#9 FAIL）。本窗新完成相对 PASS=15 基线。</p>
 <div class="summary">
-<div class="pill"><div class="label">本批构图 PASS</div><div class="value">24</div></div>
+<div class="pill"><div class="label">累计构图 PASS</div><div class="value">30</div></div>
 <div class="pill"><div class="label">本批构图 FAIL</div><div class="value">0</div></div>
 <div class="pill"><div class="label">四路并发</div><div class="value">xxk-1..4</div></div>
 <div class="pill"><div class="label">目标</div><div class="value">158</div></div>
@@ -53,10 +53,16 @@ th,td { border:1px solid var(--line); padding:6px 8px; text-align:left; } th { b
 <tr><td>#31</td><td>L4</td><td><span class="badge comp-pass">PASS</span></td><td>0.0016</td><td>0.0014</td><td>0.1479</td><td>0.0222</td><td>0.0434</td></tr>
 <tr><td>#32</td><td>L1</td><td><span class="badge comp-pass">PASS</span></td><td>0.0016</td><td>0.0097</td><td>0.123</td><td>0.0389</td><td>0.1361</td></tr>
 <tr><td>#34</td><td>L2</td><td><span class="badge comp-pass">PASS</span></td><td>0.0008</td><td>0.0056</td><td>0.0417</td><td>0.0194</td><td>0.0</td></tr>
+<tr><td>#35</td><td>L3</td><td><span class="badge comp-pass">PASS</span></td><td>0.0734</td><td>0.025</td><td>0.1354</td><td>0.0</td><td>0.0007</td></tr>
 <tr><td>#36</td><td>L4</td><td><span class="badge comp-pass">PASS</span></td><td>0.0</td><td>0.0194</td><td>0.0406</td><td>0.0389</td><td>0.0112</td></tr>
 <tr><td>#37</td><td>L1</td><td><span class="badge comp-pass">PASS</span></td><td>0.0</td><td>0.0194</td><td>0.0406</td><td>0.0</td><td>0.0001</td></tr>
 <tr><td>#38</td><td>L2</td><td><span class="badge comp-pass">PASS</span></td><td>0.0</td><td>0.0194</td><td>0.0406</td><td>0.0583</td><td>0.0002</td></tr>
 <tr><td>#40</td><td>L4</td><td><span class="badge comp-pass">PASS</span></td><td>0.0</td><td>0.0194</td><td>0.0406</td><td>0.0028</td><td>0.0173</td></tr>
+<tr><td>#41</td><td>L1</td><td><span class="badge comp-pass">PASS</span></td><td>0.0</td><td>0.0194</td><td>0.0406</td><td>0.0</td><td>0.0396</td></tr>
+<tr><td>#42</td><td>L2</td><td><span class="badge comp-pass">PASS</span></td><td>0.0008</td><td>0.0333</td><td>0.0835</td><td>0.0028</td><td>0.0457</td></tr>
+<tr><td>#44</td><td>L4</td><td><span class="badge comp-pass">PASS</span></td><td>0.0039</td><td>0.0028</td><td>0.1529</td><td>0.0167</td><td>0.0323</td></tr>
+<tr><td>#47</td><td>L2</td><td><span class="badge comp-pass">PASS</span></td><td>0.0016</td><td>0.0</td><td>0.1615</td><td>0.0556</td><td>0.0756</td></tr>
+<tr><td>#49</td><td>L4</td><td><span class="badge comp-pass">PASS</span></td><td>0.0</td><td>0.0194</td><td>0.0406</td><td>0.0028</td><td>0.0531</td></tr>
 </tbody></table>
 <h2 class="section-title">题卡</h2>
     <article class="card" id="case1">
@@ -259,6 +265,16 @@ th,td { border:1px solid var(--line); padding:6px 8px; text-align:left; } th { b
         <figure><img src="media/case_34_official.jpg" alt="official #34" loading="lazy"/><figcaption>官方首帧</figcaption></figure>
         <figure><img src="media/case_34_opening.jpg" alt="opening #34" loading="lazy"/><figcaption>opening-gate</figcaption></figure>
       </div></article>
+    <article class="card" id="case35">
+      <div class="card-head"><h2>#35</h2>
+        <span class="badge comp-pass">构图 PASS</span>
+        <span class="badge ol-pass">开场锁定 PASS · mae=0.9549</span>
+        <span class="lane-tag">L3</span></div>
+      <p class="why pass">cxΔ=0.0734 cyΔ=0.025 area_rel=0.1354 horizonΔ=0.0 upper_fillΔ=0.0007 · ACCEPT=Y · motion=Y · 白膜无投影</p>
+      <div class="pair">
+        <figure><img src="media/case_35_official.jpg" alt="official #35" loading="lazy"/><figcaption>官方首帧</figcaption></figure>
+        <figure><img src="media/case_35_opening.jpg" alt="opening #35" loading="lazy"/><figcaption>opening-gate</figcaption></figure>
+      </div></article>
     <article class="card" id="case36">
       <div class="card-head"><h2>#36</h2>
         <span class="badge comp-pass">构图 PASS</span>
@@ -298,5 +314,55 @@ th,td { border:1px solid var(--line); padding:6px 8px; text-align:left; } th { b
       <div class="pair">
         <figure><img src="media/case_40_official.jpg" alt="official #40" loading="lazy"/><figcaption>官方首帧</figcaption></figure>
         <figure><img src="media/case_40_opening.jpg" alt="opening #40" loading="lazy"/><figcaption>opening-gate</figcaption></figure>
+      </div></article>
+    <article class="card" id="case41">
+      <div class="card-head"><h2>#41</h2>
+        <span class="badge comp-pass">构图 PASS</span>
+        <span class="badge ol-pass">开场锁定 PASS · mae=3.5700</span>
+        <span class="lane-tag">L1</span></div>
+      <p class="why pass">cxΔ=0.0 cyΔ=0.0194 area_rel=0.0406 horizonΔ=0.0 upper_fillΔ=0.0396 · ACCEPT=Y · motion=Y · 白膜无投影</p>
+      <div class="pair">
+        <figure><img src="media/case_41_official.jpg" alt="official #41" loading="lazy"/><figcaption>官方首帧</figcaption></figure>
+        <figure><img src="media/case_41_opening.jpg" alt="opening #41" loading="lazy"/><figcaption>opening-gate</figcaption></figure>
+      </div></article>
+    <article class="card" id="case42">
+      <div class="card-head"><h2>#42</h2>
+        <span class="badge comp-pass">构图 PASS</span>
+        <span class="badge ol-pass">开场锁定 PASS · mae=1.482684</span>
+        <span class="lane-tag">L2</span></div>
+      <p class="why pass">cxΔ=0.0008 cyΔ=0.0333 area_rel=0.0835 horizonΔ=0.0028 upper_fillΔ=0.0457 · ACCEPT=Y · motion=Y · 白膜无投影</p>
+      <div class="pair">
+        <figure><img src="media/case_42_official.jpg" alt="official #42" loading="lazy"/><figcaption>官方首帧</figcaption></figure>
+        <figure><img src="media/case_42_opening.jpg" alt="opening #42" loading="lazy"/><figcaption>opening-gate</figcaption></figure>
+      </div></article>
+    <article class="card" id="case44">
+      <div class="card-head"><h2>#44</h2>
+        <span class="badge comp-pass">构图 PASS</span>
+        <span class="badge ol-pass">开场锁定 PASS · mae=0</span>
+        <span class="lane-tag">L4</span></div>
+      <p class="why pass">cxΔ=0.0039 cyΔ=0.0028 area_rel=0.1529 horizonΔ=0.0167 upper_fillΔ=0.0323 · ACCEPT=Y · motion=Y · 白膜无投影</p>
+      <div class="pair">
+        <figure><img src="media/case_44_official.jpg" alt="official #44" loading="lazy"/><figcaption>官方首帧</figcaption></figure>
+        <figure><img src="media/case_44_opening.jpg" alt="opening #44" loading="lazy"/><figcaption>opening-gate</figcaption></figure>
+      </div></article>
+    <article class="card" id="case47">
+      <div class="card-head"><h2>#47</h2>
+        <span class="badge comp-pass">构图 PASS</span>
+        <span class="badge ol-pass">开场锁定 PASS · mae=0</span>
+        <span class="lane-tag">L2</span></div>
+      <p class="why pass">cxΔ=0.0016 cyΔ=0.0 area_rel=0.1615 horizonΔ=0.0556 upper_fillΔ=0.0756 · ACCEPT=Y · motion=Y · 白膜无投影</p>
+      <div class="pair">
+        <figure><img src="media/case_47_official.jpg" alt="official #47" loading="lazy"/><figcaption>官方首帧</figcaption></figure>
+        <figure><img src="media/case_47_opening.jpg" alt="opening #47" loading="lazy"/><figcaption>opening-gate</figcaption></figure>
+      </div></article>
+    <article class="card" id="case49">
+      <div class="card-head"><h2>#49</h2>
+        <span class="badge comp-pass">构图 PASS</span>
+        <span class="badge ol-pass">开场锁定 PASS · mae=0.6844</span>
+        <span class="lane-tag">L4</span></div>
+      <p class="why pass">cxΔ=0.0 cyΔ=0.0194 area_rel=0.0406 horizonΔ=0.0028 upper_fillΔ=0.0531 · ACCEPT=Y · motion=Y · 白膜无投影</p>
+      <div class="pair">
+        <figure><img src="media/case_49_official.jpg" alt="official #49" loading="lazy"/><figcaption>官方首帧</figcaption></figure>
+        <figure><img src="media/case_49_opening.jpg" alt="opening #49" loading="lazy"/><figcaption>opening-gate</figcaption></figure>
       </div></article>
 </main></body></html>
