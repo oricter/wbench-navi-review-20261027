@@ -1,0 +1,62 @@
+{
+  "pass": true,
+  "official": "/fsx/pipeline/world500-standalone/xuxiake/navi-remake-20261029/lane1/cases/case_29/official-first-frame.jpg",
+  "opening": "/fsx/pipeline/world500-standalone/xuxiake/navi-remake-20261029/lane1/cases/case_29/opening-gate.jpg",
+  "mask": "/fsx/pipeline/world500-standalone/xuxiake/navi-remake-20261029/lane1/cases/case_29/official-mask.png",
+  "subject_bbox_official": [
+    286,
+    83,
+    352,
+    285
+  ],
+  "subject_bbox_opening": [
+    282,
+    105,
+    354,
+    291
+  ],
+  "subject_cx_official": 0.4984,
+  "subject_cy_official": 0.5111,
+  "subject_cx_opening": 0.4969,
+  "subject_cy_opening": 0.5847,
+  "subject_area_official": 0.0579,
+  "subject_area_opening": 0.0659,
+  "subject_cx_delta": 0.0016,
+  "subject_cy_delta": 0.0736,
+  "subject_area_rel": 0.1395,
+  "horizon_official": 0.4833,
+  "horizon_opening": 0.45,
+  "horizon_delta": 0.0333,
+  "gray_mae": 72.75,
+  "upper_fill_official": 0.9158,
+  "upper_fill_opening": 0.9984,
+  "upper_fill_delta": 0.0826,
+  "thresholds": {
+    "cx": 0.08,
+    "cy": 0.1,
+    "cy_base": 0.08,
+    "area_rel": 0.25,
+    "horizon": 0.06,
+    "upper_fill": 0.18,
+    "feet_y1_max": 0.9,
+    "feet_margin_min": 0.06,
+    "feet_bot_dark_max": 0.22
+  },
+  "feet": {
+    "tall": true,
+    "off_y1": 0.8167,
+    "opn_y1": 0.8778,
+    "off_margin": 0.1833,
+    "opn_margin": 0.1222,
+    "off_bot_dark": 0.0119,
+    "opn_bot_dark": 0.0179,
+    "bbox_y1_raw": 0.8083,
+    "bbox_y1_refined": 0.8778,
+    "bbox_y0_raw": 0.3917,
+    "bbox_y0_head_ext": 0.2917,
+    "cy_lim": 0.1
+  },
+  "reasons": [
+    "within_thresholds"
+  ]
+}
