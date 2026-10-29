@@ -4,7 +4,7 @@
 - **诚实 FAIL**: []
 - **producing**: []
 - **blocked / 未跑**: []
-- **更新**: 2026-10-28 10:46 Asia/Shanghai
+- **更新**: 2026-10-29 11:58 Asia/Shanghai
 - **验收**: https://oricter.github.io/wbench-navi-review-20261027/
 - **commit**: 040d4113c9b2e9863f86687970db52c15162f826 (040d411)
 - **四题终态**:
@@ -25,3 +25,8 @@
 - QA 重录队列：#12/#6/#62/#71 均已 shared-rec 确定性重录（OPEN_HOLD + WASD-only，禁止中途 re-settle）。
   - #12 OPENING_LOCK mae=1.9055；#6 mae=1.4085；#62 mae=1.1481 COMP cx=0.0008 cy=0.0000 area=0.1533 hz=0.0528；#71 mae=1.2598 COMP cx=0.0 cy=0.0194 area=0.0406 hz=0.0111
 - pods xxk-1/xxk-2 保留供视频拷贝，交付确认后再删。
+
+
+## P1 remake 待审
+- **#63** remake fix8 已上页：adj_mae_max=16 · lock0.76 · **待审**（未 ACCEPT，等口头确认）
+  - 覆盖远端 fix3 media；motion/opening 来自 NAS `navi-remake-20261029/.../case_63/`
