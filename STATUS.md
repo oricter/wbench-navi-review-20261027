@@ -4,7 +4,7 @@
 - **诚实 FAIL**: []
 - **producing**: []
 - **blocked / 未跑**: []
-- **更新**: 2026-10-29 13:25 Asia/Shanghai
+- **更新**: 2026-10-29 13:55 Asia/Shanghai
 - **验收**: https://oricter.github.io/wbench-navi-review-20261027/
 - **commit**: 040d4113c9b2e9863f86687970db52c15162f826 (040d411)
 - **四题终态**:
@@ -28,6 +28,8 @@
 
 
 ## P1 remake 待审
+- **#104** remake fix5 已上页：adj_mae_max=10.4 · lock1.63 · hzΔ=0.058 · **待审**（未 ACCEPT，等口头确认）
+  - 构图：上枝淡化出 wood + 中干木色锚 mid-frame；motion/opening 来自 NAS `navi-remake-20261029/.../case_104/`
 - **#63** remake fix8 已上页：adj_mae_max=16 · lock0.76 · **待审**（未 ACCEPT，等口头确认）
   - 覆盖远端 fix3 media；motion/opening 来自 NAS `navi-remake-20261029/.../case_63/`
 - **#157** remake fix2 已上页：adj_mae_max=4.6 · lock1.00 · **待审**（未 ACCEPT，等口头确认）
