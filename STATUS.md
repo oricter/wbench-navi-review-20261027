@@ -4,7 +4,7 @@
 - **诚实 FAIL**: []
 - **producing**: []
 - **blocked / 未跑**: []
-- **更新**: 2026-10-29 13:55 Asia/Shanghai
+- **更新**: 2026-10-29 14:48 Asia/Shanghai
 - **验收**: https://oricter.github.io/wbench-navi-review-20261027/
 - **commit**: 040d4113c9b2e9863f86687970db52c15162f826 (040d411)
 - **四题终态**:
@@ -27,14 +27,8 @@
 - pods xxk-1/xxk-2 保留供视频拷贝，交付确认后再删。
 
 
-## P1 remake 待审
-- **#104** remake fix5 已上页：adj_mae_max=10.4 · lock1.63 · hzΔ=0.058 · **待审**（未 ACCEPT，等口头确认）
-  - 构图：上枝淡化出 wood + 中干木色锚 mid-frame；motion/opening 来自 NAS `navi-remake-20261029/.../case_104/`
-- **#63** remake fix8 已上页：adj_mae_max=16 · lock0.76 · **待审**（未 ACCEPT，等口头确认）
-  - 覆盖远端 fix3 media；motion/opening 来自 NAS `navi-remake-20261029/.../case_63/`
-- **#157** remake fix2 已上页：adj_mae_max=4.6 · lock1.00 · **待审**（未 ACCEPT，等口头确认）
-  - motion/opening 来自 NAS `navi-remake-20261029/.../case_157/`
-- **#59** remake fix3 已上页：adj_mae_max=0.77 · lock1.17 · **待审**（未 ACCEPT，等口头确认）
-  - FP 滑翔连续轨迹；构图 hzΔ=0.047；motion/opening 来自 NAS `navi-remake-20261029/.../case_59/`
-- **#76** remake fix1 已上页：adj_mae_max=12.06 · lock2.90 · **待审**（未 ACCEPT，等口头确认）
-  - FP 游乐园连续轨迹；构图 hzΔ=0.0；motion/opening 来自 NAS `navi-remake-20261029/.../case_76/`
+## P1 remake · Codex 自审（2026-10-29 14:48 Asia/Shanghai）
+- 六题均 **Codex自审过·待你抽查**（非最终 ACCEPT）：#59 #63 #76 #104 #156 #157
+- #156 remake fix10 新片已换：adj_mae_max=12.24 · lock1.15 · hzΔ=0.003 · 连续后跟无硬切
+- 详情：仓库外 `/workspace/wbench-navi-batch/lowscore/CODEX_SELF_REVIEW.md`
+
