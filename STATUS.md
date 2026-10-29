@@ -32,3 +32,8 @@
 - #156 remake fix10 新片已换：adj_mae_max=12.24 · lock1.15 · hzΔ=0.003 · 连续后跟无硬切
 - 详情：仓库外 `/workspace/wbench-navi-batch/lowscore/CODEX_SELF_REVIEW.md`
 
+## P1 remake · #99 Codex自审（2026-10-29 17:00 Asia/Shanghai）
+- **#99** remake fixNL0：**Codex自审过·待你抽查**（非最终 ACCEPT）
+  - 去 letterbox + plant-only mask；cxΔ=0.0008 · lock=1.77 · adj_mae_max=6.23
+  - 自审：主体霜灌木全程在画；有真实位移；无硬切
+- #29 仍在 reframing（Codex FAIL：脚被裁，门禁假 PASS）
