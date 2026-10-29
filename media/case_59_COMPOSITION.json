@@ -1,0 +1,44 @@
+{
+  "pass": true,
+  "official": "/fsx/pipeline/world500-standalone/xuxiake/navi-remake-20261029/lane1/cases/case_59/official-first-frame.jpg",
+  "opening": "/fsx/pipeline/world500-standalone/xuxiake/navi-remake-20261029/lane1/cases/case_59/opening-gate.jpg",
+  "mask": "/fsx/pipeline/world500-standalone/xuxiake/navi-remake-20261029/lane1/cases/case_59/official-mask.png",
+  "subject_bbox_official": [
+    106,
+    188,
+    554,
+    359
+  ],
+  "subject_bbox_opening": [
+    84,
+    175,
+    554,
+    354
+  ],
+  "subject_cx_official": 0.5156,
+  "subject_cy_official": 0.7597,
+  "subject_cx_opening": 0.4984,
+  "subject_cy_opening": 0.7347,
+  "subject_area_official": 0.3325,
+  "subject_area_opening": 0.3651,
+  "subject_cx_delta": 0.0172,
+  "subject_cy_delta": 0.025,
+  "subject_area_rel": 0.0982,
+  "horizon_official": 0.4944,
+  "horizon_opening": 0.4472,
+  "horizon_delta": 0.0472,
+  "gray_mae": 43.29,
+  "upper_fill_official": 0.8615,
+  "upper_fill_opening": 0.9759,
+  "upper_fill_delta": 0.1144,
+  "thresholds": {
+    "cx": 0.08,
+    "cy": 0.08,
+    "area_rel": 0.25,
+    "horizon": 0.06,
+    "upper_fill": 0.18
+  },
+  "reasons": [
+    "within_thresholds"
+  ]
+}
