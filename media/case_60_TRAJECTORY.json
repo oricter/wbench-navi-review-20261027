@@ -1,0 +1,14 @@
+{
+  "adj_mae_max": 1.16,
+  "adj_mae_mean": 0.59,
+  "adj_mae_p95": 1.1,
+  "spikes_ge28": 0,
+  "spikes_ge50": 0,
+  "near_black": 0,
+  "sparse_max": 4.66,
+  "sparse_mean": 2.56,
+  "nearly_static": false,
+  "pass": true,
+  "n_frames": 164,
+  "method": "same-settle-std"
+}
