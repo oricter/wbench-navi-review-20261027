@@ -4,7 +4,7 @@
 - **诚实 FAIL**: []
 - **producing**: []
 - **blocked / 未跑**: []
-- **更新**: 2026-10-29 13:00 Asia/Shanghai
+- **更新**: 2026-10-29 13:25 Asia/Shanghai
 - **验收**: https://oricter.github.io/wbench-navi-review-20261027/
 - **commit**: 040d4113c9b2e9863f86687970db52c15162f826 (040d411)
 - **四题终态**:
@@ -34,3 +34,5 @@
   - motion/opening 来自 NAS `navi-remake-20261029/.../case_157/`
 - **#59** remake fix3 已上页：adj_mae_max=0.77 · lock1.17 · **待审**（未 ACCEPT，等口头确认）
   - FP 滑翔连续轨迹；构图 hzΔ=0.047；motion/opening 来自 NAS `navi-remake-20261029/.../case_59/`
+- **#76** remake fix1 已上页：adj_mae_max=12.06 · lock2.90 · **待审**（未 ACCEPT，等口头确认）
+  - FP 游乐园连续轨迹；构图 hzΔ=0.0；motion/opening 来自 NAS `navi-remake-20261029/.../case_76/`
