@@ -1,5 +1,5 @@
 {
-  "updatedAtUtc": "2026-10-30T03:52:40Z",
+  "updatedAtUtc": "2026-10-30T04:46:21Z",
   "timezone": "Asia/Shanghai",
   "scope": {
     "lowScoreCases": 71,
@@ -91,9 +91,7 @@
   "vlm": {
     "status": "completed_p1_vlm",
     "model": "doubao-seed-2-0-lite-260428",
-    "startedAt": 1793331928.358592,
     "finishedAt": 1793332067.1042254,
-    "canaryCompletedAt": 1793331941.7308624,
     "metrics": [
       "scene_adherence",
       "subject_adherence",
@@ -109,169 +107,124 @@
     "cases": {
       "29": {
         "status": "completed",
-        "startedAt": 1793331928.936315,
         "candidate": "case29-attempt001",
-        "finishedAt": 1793331941.710457,
         "scores": {
           "scene_adherence": 0.2,
           "subject_adherence": 0.5
-        },
-        "errors": []
+        }
       },
       "60": {
         "status": "completed",
-        "startedAt": 1793331942.639963,
         "candidate": "case60-attempt001",
-        "finishedAt": 1793331948.0983424,
         "scores": {
           "scene_adherence": 0.5
-        },
-        "errors": []
+        }
       },
       "61": {
         "status": "completed",
-        "startedAt": 1793331942.6797502,
         "candidate": "case61-attempt001",
-        "finishedAt": 1793331950.5800123,
         "scores": {
           "scene_adherence": 0.4
-        },
-        "errors": []
+        }
       },
       "59": {
         "status": "completed",
-        "startedAt": 1793331942.7038505,
         "candidate": "case59-attempt001",
-        "finishedAt": 1793331949.6651342,
         "scores": {
           "scene_adherence": 0.5
-        },
-        "errors": []
+        }
       },
       "42": {
         "status": "completed",
-        "startedAt": 1793331942.723538,
         "candidate": "case42-attempt001",
-        "finishedAt": 1793331949.4063392,
         "scores": {
           "scene_adherence": 0.3
-        },
-        "errors": []
+        }
       },
       "62": {
         "status": "completed",
-        "startedAt": 1793331948.181802,
         "candidate": "case62-attempt003",
-        "finishedAt": 1793331960.0366213,
         "scores": {
           "scene_adherence": 0.4,
           "subject_adherence": 1.0
-        },
-        "errors": []
+        }
       },
       "63": {
         "status": "completed",
-        "startedAt": 1793331949.8486555,
         "candidate": "case63-attempt001",
-        "finishedAt": 1793331993.897917,
         "scores": {
           "scene_adherence": 0.5,
           "subject_adherence": 1.0,
           "causal_fidelity": 0.6667
-        },
-        "errors": []
+        }
       },
       "64": {
         "status": "completed",
-        "startedAt": 1793331949.9538565,
         "candidate": "case64-attempt001",
-        "finishedAt": 1793331981.5808692,
         "scores": {
           "scene_adherence": 0.2,
           "subject_adherence": 1.0,
           "causal_fidelity": 0.5
-        },
-        "errors": []
+        }
       },
       "65": {
         "status": "completed",
-        "startedAt": 1793331951.1460235,
         "candidate": "case65-attempt001",
-        "finishedAt": 1793332009.5490813,
         "scores": {
           "scene_adherence": 0.4,
           "subject_adherence": 1.0,
           "causal_fidelity": 0.6667
-        },
-        "errors": []
+        }
       },
       "76": {
         "status": "completed",
-        "startedAt": 1793331960.1886685,
         "candidate": "case76-attempt001",
-        "finishedAt": 1793331968.3946526,
         "scores": {
           "scene_adherence": 0.4
-        },
-        "errors": []
+        }
       },
       "99": {
         "status": "completed",
-        "startedAt": 1793331968.7390187,
         "candidate": "case99-attempt001",
-        "finishedAt": 1793332014.7635732,
         "scores": {
           "scene_adherence": 0.5,
           "causal_fidelity": 0.8889
-        },
-        "errors": []
+        }
       },
       "104": {
         "status": "completed",
-        "startedAt": 1793331982.4034333,
         "candidate": "case104-attempt001",
-        "finishedAt": 1793332046.8814225,
         "scores": {
           "scene_adherence": 0.5,
           "subject_adherence": 0.5,
           "causal_fidelity": 0.7083
-        },
-        "errors": []
+        }
       },
       "118": {
         "status": "completed",
-        "startedAt": 1793331993.9932432,
         "candidate": "case118-attempt002",
-        "finishedAt": 1793332038.9250095,
         "scores": {
           "scene_adherence": 0.5,
           "subject_adherence": 1.0,
           "causal_fidelity": 0.6667
-        },
-        "errors": []
+        }
       },
       "156": {
         "status": "completed",
-        "startedAt": 1793332009.713689,
         "candidate": "case156-attempt002",
-        "finishedAt": 1793332021.3873692,
         "scores": {
           "scene_adherence": 1.0,
           "subject_adherence": 0.8
-        },
-        "errors": []
+        }
       },
       "157": {
         "status": "completed",
-        "startedAt": 1793332015.4032328,
         "candidate": "case157-attempt002",
-        "finishedAt": 1793332067.082853,
         "scores": {
           "scene_adherence": 0.5,
           "subject_adherence": 0.5,
           "causal_fidelity": 0.6111
-        },
-        "errors": []
+        }
       }
     },
     "requestStats": {
@@ -282,8 +235,28 @@
       "outputTokens": 2177
     }
   },
+  "vlmRevisions": [
+    {
+      "status": "completed_scoped_vlm",
+      "model": "doubao-seed-2-0-lite-260428",
+      "cases": {
+        "29": {
+          "status": "completed",
+          "startedAt": 1793333109.9610386,
+          "candidate": "case29-attempt002",
+          "finishedAt": 1793333123.3543742,
+          "scores": {
+            "scene_adherence": 1.0,
+            "subject_adherence": 0.5
+          },
+          "errors": []
+        }
+      },
+      "finishedAt": 1793333123.3893757
+    }
+  ],
   "gpuCohort": {
-    "status": "running",
+    "status": "completed_p1_gpu_metrics",
     "caseIds": [
       29,
       42,
@@ -301,9 +274,76 @@
       156,
       157
     ],
-    "currentStage": "precompute-sam2-da3",
+    "currentStage": "report",
     "pendingFastCaseIds": [],
-    "error": null
+    "error": null,
+    "naviReport": {
+      "background_consistency": {
+        "mean": 0.9292,
+        "n": 15
+      },
+      "dynamic_degree": {
+        "mean": 0.8667,
+        "n": 15
+      },
+      "gated_spatial_consistency": {
+        "mean": 0.9167,
+        "n": 2
+      },
+      "geometric_consistency": {
+        "mean": 0.8783,
+        "n": 15
+      },
+      "hpsv3_quality": {
+        "mean": 0.4351,
+        "n": 15
+      },
+      "imaging_quality": {
+        "mean": 0.6957,
+        "n": 15
+      },
+      "motion_smoothness": {
+        "mean": 0.9884,
+        "n": 15
+      },
+      "navigation_accuracy": {
+        "mean": 0.7072,
+        "n": 15
+      },
+      "navigation_consistency": {
+        "mean": 0.8543,
+        "n": 15
+      },
+      "perspective_consistency": {
+        "mean": 0.7974,
+        "n": 13
+      },
+      "photometric_consistency": {
+        "mean": 0.8023,
+        "n": 15
+      },
+      "segment_continuity": {
+        "mean": 0.7333,
+        "n": 15
+      },
+      "spatial_consistency": {
+        "mean": 0.9688,
+        "n": 2
+      },
+      "subject_consistency": {
+        "mean": 0.9269,
+        "n": 13
+      },
+      "temporal_flickering": {
+        "mean": 0.962,
+        "n": 15
+      },
+      "navigation_trajectory": {
+        "mean": 0.7808,
+        "n": 15,
+        "n_consistency": 15
+      }
+    }
   },
   "currentEvaluationJudge": "doubao-seed-2-0-lite-260428",
   "currentEvaluationMatchesHistoricalJudge": false,
@@ -321,7 +361,6 @@
         },
         "dynamic_degree": 1.0,
         "segment_continuity": 1.0,
-        "aesthetic_quality": 0.4748341292142868,
         "imaging_quality": 0.7369480776786804
       },
       "candidate": "case29-attempt001",
@@ -340,7 +379,6 @@
         },
         "dynamic_degree": 1.0,
         "segment_continuity": 1.0,
-        "aesthetic_quality": 0.48934276476502425,
         "imaging_quality": 0.7019687628746032
       },
       "candidate": "case42-attempt001",
@@ -359,7 +397,6 @@
         },
         "dynamic_degree": 1.0,
         "segment_continuity": 1.0,
-        "aesthetic_quality": 0.4667289465665817,
         "imaging_quality": 0.7159280872344971
       },
       "candidate": "case59-attempt001",
@@ -396,7 +433,6 @@
         },
         "dynamic_degree": 1.0,
         "segment_continuity": 1.0,
-        "aesthetic_quality": 0.5307500571012497,
         "imaging_quality": 0.6859482717514038
       },
       "candidate": "case61-attempt001",
@@ -415,7 +451,6 @@
         },
         "dynamic_degree": 1.0,
         "segment_continuity": 0.0,
-        "aesthetic_quality": 0.5253274254500866,
         "imaging_quality": 0.7144597792625427
       },
       "candidate": "case62-attempt001",
@@ -488,7 +523,6 @@
         },
         "dynamic_degree": 1.0,
         "segment_continuity": 1.0,
-        "aesthetic_quality": 0.5140795975923538,
         "imaging_quality": 0.6522253012657165
       },
       "candidate": "case65-attempt001",
@@ -525,7 +559,6 @@
         },
         "dynamic_degree": 1.0,
         "segment_continuity": 1.0,
-        "aesthetic_quality": 0.5975900024175644,
         "imaging_quality": 0.623498990535736
       },
       "candidate": "case99-attempt001",
@@ -544,7 +577,6 @@
         },
         "dynamic_degree": 1.0,
         "segment_continuity": 1.0,
-        "aesthetic_quality": 0.7016386657953263,
         "imaging_quality": 0.7336183333396912
       },
       "candidate": "case104-attempt001",
@@ -599,7 +631,6 @@
         },
         "dynamic_degree": 0.0,
         "segment_continuity": 1.0,
-        "aesthetic_quality": 0.5116524835427602,
         "imaging_quality": 0.7466887378692627
       },
       "candidate": "case157-attempt002",
@@ -614,128 +645,126 @@
       "status": "protocol_executed_pending_visual_and_score_review",
       "frames": 480,
       "durationSeconds": 16,
-      "videoSha256": "2c3fa77484526c2b75f819bdde9d76148c7731950a502346f5816593b34fd25f",
-      "completedAt": "2026-10-30T02:34:59.612Z"
+      "videoSha256": "2c3fa77484526c2b75f819bdde9d76148c7731950a502346f5816593b34fd25f"
     },
     {
       "candidate": "case118-attempt002",
       "status": "protocol_executed_pending_visual_and_score_review",
       "frames": 480,
       "durationSeconds": 16,
-      "videoSha256": "c91950d271eedaf500cf4e79f3a029742086697524962b07869b7de5f0859979",
-      "completedAt": "2026-10-30T03:20:40.615Z"
+      "videoSha256": "c91950d271eedaf500cf4e79f3a029742086697524962b07869b7de5f0859979"
+    },
+    {
+      "candidate": "case118-attempt003",
+      "status": "protocol_executed_pending_visual_and_score_review",
+      "frames": 480,
+      "durationSeconds": 16,
+      "videoSha256": "ce48e986bb5fc7369fd0571e9e9d99d77b8ba2403de108545c5ee87b5644f835"
     },
     {
       "candidate": "case156-attempt002",
       "status": "protocol_executed_pending_visual_and_score_review",
       "frames": 480,
       "durationSeconds": 16,
-      "videoSha256": "ddb595dd28977e2d702d28de87e1dbfb7bd891e625e2aec938cd73bb4446cc7d",
-      "completedAt": "2026-10-30T03:10:58.009Z"
+      "videoSha256": "ddb595dd28977e2d702d28de87e1dbfb7bd891e625e2aec938cd73bb4446cc7d"
     },
     {
       "candidate": "case157-attempt002",
       "status": "protocol_executed_pending_visual_and_score_review",
       "frames": 360,
       "durationSeconds": 12,
-      "videoSha256": "4d3d3b80204e8ac91b88a5eecf483c512560033ff9af185e8eb49869dddbbc6d",
-      "completedAt": "2026-10-30T02:40:38.787Z"
+      "videoSha256": "4d3d3b80204e8ac91b88a5eecf483c512560033ff9af185e8eb49869dddbbc6d"
     },
     {
       "candidate": "case29-attempt001",
       "status": "protocol_executed_pending_visual_and_score_review",
       "frames": 480,
       "durationSeconds": 16,
-      "videoSha256": "bd493053ef2d5463b4df55fab59117ba45621d55a2be102caf6e5e95c2d0ea93",
-      "completedAt": "2026-10-30T02:34:22.011Z"
+      "videoSha256": "bd493053ef2d5463b4df55fab59117ba45621d55a2be102caf6e5e95c2d0ea93"
+    },
+    {
+      "candidate": "case29-attempt002",
+      "status": "protocol_executed_pending_visual_and_score_review",
+      "frames": 480,
+      "durationSeconds": 16,
+      "videoSha256": "d74b9dfcc25e5fc3ff47404bf58db02b0890c2710637b88e3e0b47c1cabbcdfd"
     },
     {
       "candidate": "case42-attempt001",
       "status": "protocol_executed_pending_visual_and_score_review",
       "frames": 480,
       "durationSeconds": 16,
-      "videoSha256": "a29f4df581d12ffa4a6e3303afe7982bf17a32b8e71fd415b6271024843fbba3",
-      "completedAt": "2026-10-30T02:57:43.853Z"
+      "videoSha256": "a29f4df581d12ffa4a6e3303afe7982bf17a32b8e71fd415b6271024843fbba3"
     },
     {
       "candidate": "case59-attempt001",
       "status": "protocol_executed_pending_visual_and_score_review",
       "frames": 480,
       "durationSeconds": 16,
-      "videoSha256": "0e21bf297779e7c158566048cfef4c0bb53ff822662208aad223af9afbe97098",
-      "completedAt": "2026-10-30T02:40:22.287Z"
+      "videoSha256": "0e21bf297779e7c158566048cfef4c0bb53ff822662208aad223af9afbe97098"
     },
     {
       "candidate": "case60-attempt001",
       "status": "protocol_executed_pending_visual_and_score_review",
       "frames": 480,
       "durationSeconds": 16,
-      "videoSha256": "af90efe056bbe0f919e280e2c3b3e794487104b289a05b57270fd58d612d8029",
-      "completedAt": "2026-10-30T03:07:20.904Z"
+      "videoSha256": "af90efe056bbe0f919e280e2c3b3e794487104b289a05b57270fd58d612d8029"
     },
     {
       "candidate": "case61-attempt001",
       "status": "protocol_executed_pending_visual_and_score_review",
       "frames": 480,
       "durationSeconds": 16,
-      "videoSha256": "a9ffe04d48fc45da4ff69e035c6b44d451eb7d07ee422e9270c2360d62d60f5d",
-      "completedAt": "2026-10-30T02:49:24.937Z"
+      "videoSha256": "a9ffe04d48fc45da4ff69e035c6b44d451eb7d07ee422e9270c2360d62d60f5d"
     },
     {
       "candidate": "case62-attempt001",
       "status": "protocol_executed_pending_visual_and_score_review",
       "frames": 480,
       "durationSeconds": 16,
-      "videoSha256": "cec80a74c5dbc6b094c846eb4d56b6f0fcb85273994f272246b2e18dfb2c770a",
-      "completedAt": "2026-10-30T02:45:13.818Z"
+      "videoSha256": "cec80a74c5dbc6b094c846eb4d56b6f0fcb85273994f272246b2e18dfb2c770a"
     },
     {
       "candidate": "case62-attempt003",
       "status": "protocol_executed_pending_visual_and_score_review",
       "frames": 480,
       "durationSeconds": 16,
-      "videoSha256": "cf749d5cdab626bfa24ceb4359fb3e0888bf47747c0b458fd92f456eb7e49113",
-      "completedAt": "2026-10-30T03:32:31.914Z"
+      "videoSha256": "cf749d5cdab626bfa24ceb4359fb3e0888bf47747c0b458fd92f456eb7e49113"
     },
     {
       "candidate": "case63-attempt001",
       "status": "protocol_executed_pending_visual_and_score_review",
       "frames": 480,
       "durationSeconds": 16,
-      "videoSha256": "d67d167e93be970581664fe2ba5a5a43627ca6d4455b24d3ac6d75689859c26c",
-      "completedAt": "2026-10-30T03:10:39.861Z"
+      "videoSha256": "d67d167e93be970581664fe2ba5a5a43627ca6d4455b24d3ac6d75689859c26c"
     },
     {
       "candidate": "case64-attempt001",
       "status": "protocol_executed_pending_visual_and_score_review",
       "frames": 480,
       "durationSeconds": 16,
-      "videoSha256": "291f9061badce157fe222556e65ea13f1d23ae0fd5ab970cf9e60fa1ef398112",
-      "completedAt": "2026-10-30T03:16:25.214Z"
+      "videoSha256": "291f9061badce157fe222556e65ea13f1d23ae0fd5ab970cf9e60fa1ef398112"
     },
     {
       "candidate": "case65-attempt001",
       "status": "protocol_executed_pending_visual_and_score_review",
       "frames": 480,
       "durationSeconds": 16,
-      "videoSha256": "9b23c75c91b532b0b230d02e022f20434f1a55137bccaf2669415e7602be6ae0",
-      "completedAt": "2026-10-30T02:41:27.195Z"
+      "videoSha256": "9b23c75c91b532b0b230d02e022f20434f1a55137bccaf2669415e7602be6ae0"
     },
     {
       "candidate": "case76-attempt001",
       "status": "protocol_executed_pending_visual_and_score_review",
       "frames": 480,
       "durationSeconds": 16,
-      "videoSha256": "cc22fbd9fa291b4593c603afe5f19e5908fa47fc9618b133f2c899a508592e22",
-      "completedAt": "2026-10-30T03:21:32.451Z"
+      "videoSha256": "cc22fbd9fa291b4593c603afe5f19e5908fa47fc9618b133f2c899a508592e22"
     },
     {
       "candidate": "case99-attempt001",
       "status": "protocol_executed_pending_visual_and_score_review",
       "frames": 480,
       "durationSeconds": 16,
-      "videoSha256": "0975a624b47576630632ac6e1c8f76a39aac09952e90551a98479b903df23b58",
-      "completedAt": "2026-10-30T02:51:21.609Z"
+      "videoSha256": "0975a624b47576630632ac6e1c8f76a39aac09952e90551a98479b903df23b58"
     }
   ],
   "limits": [
