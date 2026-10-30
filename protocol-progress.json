@@ -1,5 +1,5 @@
 {
-  "updatedAtUtc": "2026-10-30T03:16:58Z",
+  "updatedAtUtc": "2026-10-30T03:25:34Z",
   "timezone": "Asia/Shanghai",
   "scope": {
     "lowScoreCases": 71,
@@ -134,6 +134,22 @@
       "caseId": 59
     },
     {
+      "run": "xxk-p1-60-official-nav-v2-20261030-a01",
+      "complete": true,
+      "metrics": {
+        "navigation_trajectory": {
+          "NavScore": 0.47171953589809834,
+          "accuracy": 0.32744780956881736,
+          "consistency": 0.6159912622273793
+        },
+        "dynamic_degree": 0.0,
+        "segment_continuity": 0.0,
+        "imaging_quality": 0.6015661883354188
+      },
+      "status": "completed_fast_gpu_subset",
+      "caseId": 60
+    },
+    {
       "run": "xxk-p1-61-official-nav-v2-20261030-a01",
       "complete": true,
       "metrics": {
@@ -262,6 +278,14 @@
       "completedAt": "2026-10-30T02:34:59.612Z"
     },
     {
+      "candidate": "case118-attempt002",
+      "status": "protocol_executed_pending_visual_and_score_review",
+      "frames": 480,
+      "durationSeconds": 16,
+      "videoSha256": "c91950d271eedaf500cf4e79f3a029742086697524962b07869b7de5f0859979",
+      "completedAt": "2026-10-30T03:20:40.615Z"
+    },
+    {
       "candidate": "case156-attempt002",
       "status": "protocol_executed_pending_visual_and_score_review",
       "frames": 480,
@@ -348,6 +372,14 @@
       "durationSeconds": 16,
       "videoSha256": "9b23c75c91b532b0b230d02e022f20434f1a55137bccaf2669415e7602be6ae0",
       "completedAt": "2026-10-30T02:41:27.195Z"
+    },
+    {
+      "candidate": "case76-attempt001",
+      "status": "protocol_executed_pending_visual_and_score_review",
+      "frames": 480,
+      "durationSeconds": 16,
+      "videoSha256": "cc22fbd9fa291b4593c603afe5f19e5908fa47fc9618b133f2c899a508592e22",
+      "completedAt": "2026-10-30T03:21:32.451Z"
     },
     {
       "candidate": "case99-attempt001",
