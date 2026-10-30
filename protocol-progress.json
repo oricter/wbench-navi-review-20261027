@@ -1,5 +1,5 @@
 {
-  "updatedAtUtc": "2026-10-30T05:16:49Z",
+  "updatedAtUtc": "2026-10-30T05:45:31Z",
   "timezone": "Asia/Shanghai",
   "scope": {
     "lowScoreCases": 71,
@@ -253,6 +253,47 @@
         }
       },
       "finishedAt": 1793333123.3893757
+    },
+    {
+      "status": "completed",
+      "model": "doubao-seed-2-0-lite-260428",
+      "evaluatorPin": "15c3690c98f210ac1ce4a4452c95f50a2cf17a1a",
+      "run": "xxk-repair4-15c3690-20261030-r01",
+      "cases": {
+        "79": {
+          "candidate": "case79-attempt001",
+          "status": "completed",
+          "scores": {
+            "scene_adherence": 0.5
+          }
+        },
+        "47": {
+          "candidate": "case47-attempt002",
+          "status": "completed",
+          "scores": {
+            "scene_adherence": 0.9,
+            "subject_adherence": 0.5
+          }
+        },
+        "29": {
+          "candidate": "case29-attempt002",
+          "status": "completed",
+          "scores": {
+            "scene_adherence": 1.0,
+            "subject_adherence": 0.5
+          }
+        },
+        "63": {
+          "candidate": "case63-attempt002",
+          "status": "completed",
+          "scores": {
+            "scene_adherence": 0.5,
+            "subject_adherence": 1.0,
+            "causal_fidelity": 1.0
+          }
+        }
+      },
+      "finishedAt": 1793339022.3875499
     }
   ],
   "gpuCohort": {
@@ -391,6 +432,23 @@
     ],
     "finishedAt": null
   },
+  "candidateStages": [
+    {
+      "run": "xxk-repair4-15c3690-20261030-r01",
+      "stage": "vlm",
+      "status": "completed",
+      "caseIds": [
+        79,
+        47,
+        29,
+        63
+      ],
+      "currentPhase": null,
+      "finishedAt": 1793339022.3875499,
+      "httpNetworkCalls": 8,
+      "judgeModel": "doubao-seed-2-0-lite-260428"
+    }
+  ],
   "visualHolds": [
     {
       "candidate": "case60-attempt002",
@@ -708,6 +766,13 @@
       "videoSha256": "2c3fa77484526c2b75f819bdde9d76148c7731950a502346f5816593b34fd25f"
     },
     {
+      "candidate": "case117-attempt004",
+      "status": "protocol_executed_pending_visual_and_score_review",
+      "frames": 480,
+      "durationSeconds": 16,
+      "videoSha256": "7fbc431e1aa2b342450135ddf279892ae05d7aa55a85a52483efb5ca647c12c0"
+    },
+    {
       "candidate": "case118-attempt002",
       "status": "protocol_executed_pending_visual_and_score_review",
       "frames": 480,
@@ -720,6 +785,34 @@
       "frames": 480,
       "durationSeconds": 16,
       "videoSha256": "ce48e986bb5fc7369fd0571e9e9d99d77b8ba2403de108545c5ee87b5644f835"
+    },
+    {
+      "candidate": "case13-attempt001",
+      "status": "protocol_executed_pending_visual_and_score_review",
+      "frames": 720,
+      "durationSeconds": 24,
+      "videoSha256": "d69bb9f29b31d621e3ca87b3f5afee14c977b39534ab324a9a8763c07bd3c975"
+    },
+    {
+      "candidate": "case13-attempt002",
+      "status": "protocol_executed_pending_visual_and_score_review",
+      "frames": 720,
+      "durationSeconds": 24,
+      "videoSha256": "33e38cd020612938e4348867d07ec68e1ccc96df39dcc947263f3578d7182b90"
+    },
+    {
+      "candidate": "case15-attempt001",
+      "status": "protocol_executed_pending_visual_and_score_review",
+      "frames": 360,
+      "durationSeconds": 12,
+      "videoSha256": "145741ddfe02513c0917da8aecc87243d5e058c1df552b42c874f96c03334115"
+    },
+    {
+      "candidate": "case15-attempt002",
+      "status": "protocol_executed_pending_visual_and_score_review",
+      "frames": 360,
+      "durationSeconds": 12,
+      "videoSha256": "4d2c6eedc0230eadb97c650792c70122b71710b7daa6647f202b4cc60abfcb41"
     },
     {
       "candidate": "case156-attempt002",
@@ -736,6 +829,13 @@
       "videoSha256": "4d3d3b80204e8ac91b88a5eecf483c512560033ff9af185e8eb49869dddbbc6d"
     },
     {
+      "candidate": "case2-recovered-source-attempt001",
+      "status": "protocol_executed_pending_visual_and_score_review",
+      "frames": 720,
+      "durationSeconds": 24,
+      "videoSha256": "81c063515100654a5e55ea6c46371b4e03f46e4484a80aa2a5d041e51ecb3f6b"
+    },
+    {
       "candidate": "case29-attempt001",
       "status": "protocol_executed_pending_visual_and_score_review",
       "frames": 480,
@@ -748,6 +848,20 @@
       "frames": 480,
       "durationSeconds": 16,
       "videoSha256": "d74b9dfcc25e5fc3ff47404bf58db02b0890c2710637b88e3e0b47c1cabbcdfd"
+    },
+    {
+      "candidate": "case3-recovered-source-attempt001",
+      "status": "protocol_executed_pending_visual_and_score_review",
+      "frames": 480,
+      "durationSeconds": 16,
+      "videoSha256": "e52a560150a89cb6352804dce15af75c078fe4fef77771ad973903894ed3f11b"
+    },
+    {
+      "candidate": "case4-recovered-source-attempt001",
+      "status": "protocol_executed_pending_visual_and_score_review",
+      "frames": 480,
+      "durationSeconds": 16,
+      "videoSha256": "723cdf01a695103ba73aa244016b3a5b8e56eabb933f8fab3c006a3115ac3c37"
     },
     {
       "candidate": "case42-attempt001",
@@ -806,6 +920,13 @@
       "videoSha256": "d67d167e93be970581664fe2ba5a5a43627ca6d4455b24d3ac6d75689859c26c"
     },
     {
+      "candidate": "case63-attempt002",
+      "status": "protocol_executed_pending_visual_and_score_review",
+      "frames": 480,
+      "durationSeconds": 16,
+      "videoSha256": "fec22578ba3ccacaeca95796baa6e8b75b02ddb4372ef3d3a26a836ba8fd4c98"
+    },
+    {
       "candidate": "case64-attempt001",
       "status": "protocol_executed_pending_visual_and_score_review",
       "frames": 480,
@@ -839,6 +960,13 @@
       "frames": 480,
       "durationSeconds": 16,
       "videoSha256": "67811f5a123e3bed7b2e5429ad08059b85cec4fa25ce1d0e5fe789b2a8a5263d"
+    },
+    {
+      "candidate": "case95-attempt002",
+      "status": "protocol_executed_pending_visual_and_score_review",
+      "frames": 480,
+      "durationSeconds": 16,
+      "videoSha256": "ee83f00f18c09671460d7fe70bf75184d7d3d57839dbecc2327cb2a1476c40ee"
     },
     {
       "candidate": "case99-attempt001",
