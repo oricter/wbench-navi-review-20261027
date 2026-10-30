@@ -1,5 +1,5 @@
 {
-  "updatedAtUtc": "2026-10-30T03:07:11Z",
+  "updatedAtUtc": "2026-10-30T03:16:58Z",
   "timezone": "Asia/Shanghai",
   "scope": {
     "lowScoreCases": 71,
@@ -100,6 +100,23 @@
       "caseId": 29
     },
     {
+      "run": "xxk-p1-42-official-nav-v2-20261030-a01",
+      "complete": true,
+      "metrics": {
+        "navigation_trajectory": {
+          "NavScore": 0.45900225128598543,
+          "accuracy": 0.0,
+          "consistency": 0.9180045025719709
+        },
+        "dynamic_degree": 1.0,
+        "segment_continuity": 1.0,
+        "aesthetic_quality": 0.48934276476502425,
+        "imaging_quality": 0.7019687628746032
+      },
+      "status": "completed_fast_gpu_subset",
+      "caseId": 42
+    },
+    {
       "run": "xxk-p1-59-official-nav-v2-20261030-a01",
       "complete": true,
       "metrics": {
@@ -151,6 +168,22 @@
       "caseId": 62
     },
     {
+      "run": "xxk-p1-63-official-nav-v2-20261030-a01",
+      "complete": true,
+      "metrics": {
+        "navigation_trajectory": {
+          "NavScore": 0.8821381108343457,
+          "accuracy": 0.8487166196222575,
+          "consistency": 0.9155596020464338
+        },
+        "dynamic_degree": 1.0,
+        "segment_continuity": 0.0,
+        "imaging_quality": 0.6691479349136352
+      },
+      "status": "completed_fast_gpu_subset",
+      "caseId": 63
+    },
+    {
       "run": "xxk-p1-65-official-nav-v2-20261030-a01",
       "complete": true,
       "metrics": {
@@ -166,6 +199,23 @@
       },
       "status": "completed_fast_gpu_subset",
       "caseId": 65
+    },
+    {
+      "run": "xxk-p1-99-official-nav-v2-20261030-a01",
+      "complete": true,
+      "metrics": {
+        "navigation_trajectory": {
+          "NavScore": 0.9566654592260204,
+          "accuracy": 0.9600181047885945,
+          "consistency": 0.9533128136634464
+        },
+        "dynamic_degree": 1.0,
+        "segment_continuity": 1.0,
+        "aesthetic_quality": 0.5975900024175644,
+        "imaging_quality": 0.623498990535736
+      },
+      "status": "completed_fast_gpu_subset",
+      "caseId": 99
     },
     {
       "run": "xxk-p1-104-official-nav-v2-20261030-a01",
@@ -212,6 +262,14 @@
       "completedAt": "2026-10-30T02:34:59.612Z"
     },
     {
+      "candidate": "case156-attempt002",
+      "status": "protocol_executed_pending_visual_and_score_review",
+      "frames": 480,
+      "durationSeconds": 16,
+      "videoSha256": "ddb595dd28977e2d702d28de87e1dbfb7bd891e625e2aec938cd73bb4446cc7d",
+      "completedAt": "2026-10-30T03:10:58.009Z"
+    },
+    {
       "candidate": "case157-attempt002",
       "status": "protocol_executed_pending_visual_and_score_review",
       "frames": 360,
@@ -244,6 +302,14 @@
       "completedAt": "2026-10-30T02:40:22.287Z"
     },
     {
+      "candidate": "case60-attempt001",
+      "status": "protocol_executed_pending_visual_and_score_review",
+      "frames": 480,
+      "durationSeconds": 16,
+      "videoSha256": "af90efe056bbe0f919e280e2c3b3e794487104b289a05b57270fd58d612d8029",
+      "completedAt": "2026-10-30T03:07:20.904Z"
+    },
+    {
       "candidate": "case61-attempt001",
       "status": "protocol_executed_pending_visual_and_score_review",
       "frames": 480,
@@ -258,6 +324,22 @@
       "durationSeconds": 16,
       "videoSha256": "cec80a74c5dbc6b094c846eb4d56b6f0fcb85273994f272246b2e18dfb2c770a",
       "completedAt": "2026-10-30T02:45:13.818Z"
+    },
+    {
+      "candidate": "case63-attempt001",
+      "status": "protocol_executed_pending_visual_and_score_review",
+      "frames": 480,
+      "durationSeconds": 16,
+      "videoSha256": "d67d167e93be970581664fe2ba5a5a43627ca6d4455b24d3ac6d75689859c26c",
+      "completedAt": "2026-10-30T03:10:39.861Z"
+    },
+    {
+      "candidate": "case64-attempt001",
+      "status": "protocol_executed_pending_visual_and_score_review",
+      "frames": 480,
+      "durationSeconds": 16,
+      "videoSha256": "291f9061badce157fe222556e65ea13f1d23ae0fd5ab970cf9e60fa1ef398112",
+      "completedAt": "2026-10-30T03:16:25.214Z"
     },
     {
       "candidate": "case65-attempt001",
