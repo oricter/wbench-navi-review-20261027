@@ -1,5 +1,5 @@
 {
-  "updatedAtUtc": "2026-10-30T02:55:03Z",
+  "updatedAtUtc": "2026-10-30T03:07:11Z",
   "timezone": "Asia/Shanghai",
   "scope": {
     "lowScoreCases": 71,
@@ -11,8 +11,73 @@
     "navigation_trajectory",
     "dynamic_degree",
     "segment_continuity",
-    "aesthetic_quality",
     "imaging_quality"
+  ],
+  "objective": "First place by unweighted metric mean on Navi158, excluding aesthetic quality and previously excluded VLM metrics",
+  "targetMetricNames": {
+    "Imag": "imaging_quality",
+    "Flick": "temporal_flickering",
+    "Dyn": "dynamic_degree",
+    "Smooth": "motion_smoothness",
+    "HPSv3": "hpsv3_quality",
+    "Navi": "navigation_trajectory",
+    "BgCon": "background_consistency",
+    "Spat": "spatial_consistency",
+    "GSp": "gated_spatial_consistency",
+    "Persp": "perspective_consistency",
+    "Seg": "segment_continuity",
+    "Geo": "geometric_consistency",
+    "Photo": "photometric_consistency",
+    "SubjC": "subject_consistency",
+    "VPlaus": "visual_plausibility"
+  },
+  "publicLeader": {
+    "model": "Jelly-World / YuanJing",
+    "modelId": "jelly_world",
+    "evaluationSource": "self-evaluation",
+    "vlmDisplayVariant": "qwen",
+    "updated": "2026/10/28",
+    "metricMean": 87.19333333333334,
+    "metrics": {
+      "Imag": 68.3,
+      "Flick": 93.5,
+      "Dyn": 88.0,
+      "Smooth": 97.2,
+      "HPSv3": 75.0,
+      "Navi": 89.8,
+      "BgCon": 94.6,
+      "Spat": 91.8,
+      "GSp": 84.0,
+      "Persp": 94.3,
+      "Seg": 100.0,
+      "Geo": 95.4,
+      "Photo": 81.7,
+      "SubjC": 92.7,
+      "VPlaus": 61.6
+    },
+    "sampleCounts": {
+      "Imag": "n=158",
+      "Flick": "n=158",
+      "Dyn": "n=158",
+      "Smooth": "n=158",
+      "HPSv3": "n=158",
+      "Navi": "n=158",
+      "BgCon": "n=158",
+      "Spat": "n=60",
+      "GSp": "n=60",
+      "Persp": "n=103",
+      "Seg": "n=158",
+      "Geo": "n=158",
+      "Photo": "n=158",
+      "SubjC": "n=103",
+      "VPlaus": "n=158"
+    },
+    "rank": 1
+  },
+  "historicalMissingMetrics": [
+    "motion_smoothness",
+    "hpsv3_quality",
+    "visual_plausibility"
   ],
   "evaluatorCommit": "753cc9828173e00d71e20eafff0653bd33e881f9",
   "protocol": "Per-case official action sequence; 4 seconds per turn; opening settle excluded; v2 uniform look30",
@@ -50,6 +115,57 @@
       },
       "status": "completed_fast_gpu_subset",
       "caseId": 59
+    },
+    {
+      "run": "xxk-p1-61-official-nav-v2-20261030-a01",
+      "complete": true,
+      "metrics": {
+        "navigation_trajectory": {
+          "NavScore": 0.8415943027852724,
+          "accuracy": 0.8389956838433958,
+          "consistency": 0.844192921727149
+        },
+        "dynamic_degree": 1.0,
+        "segment_continuity": 1.0,
+        "aesthetic_quality": 0.5307500571012497,
+        "imaging_quality": 0.6859482717514038
+      },
+      "status": "completed_fast_gpu_subset",
+      "caseId": 61
+    },
+    {
+      "run": "xxk-p1-62-official-nav-v2-20261030-a01",
+      "complete": true,
+      "metrics": {
+        "navigation_trajectory": {
+          "NavScore": 0.5551558050380632,
+          "accuracy": 0.45306153600061194,
+          "consistency": 0.6572500740755144
+        },
+        "dynamic_degree": 1.0,
+        "segment_continuity": 0.0,
+        "aesthetic_quality": 0.5253274254500866,
+        "imaging_quality": 0.7144597792625427
+      },
+      "status": "completed_fast_gpu_subset",
+      "caseId": 62
+    },
+    {
+      "run": "xxk-p1-65-official-nav-v2-20261030-a01",
+      "complete": true,
+      "metrics": {
+        "navigation_trajectory": {
+          "NavScore": 0.7320217176472859,
+          "accuracy": 0.4874223109909708,
+          "consistency": 0.9766211243036008
+        },
+        "dynamic_degree": 1.0,
+        "segment_continuity": 1.0,
+        "aesthetic_quality": 0.5140795975923538,
+        "imaging_quality": 0.6522253012657165
+      },
+      "status": "completed_fast_gpu_subset",
+      "caseId": 65
     },
     {
       "run": "xxk-p1-104-official-nav-v2-20261030-a01",
@@ -112,6 +228,14 @@
       "completedAt": "2026-10-30T02:34:22.011Z"
     },
     {
+      "candidate": "case42-attempt001",
+      "status": "protocol_executed_pending_visual_and_score_review",
+      "frames": 480,
+      "durationSeconds": 16,
+      "videoSha256": "a29f4df581d12ffa4a6e3303afe7982bf17a32b8e71fd415b6271024843fbba3",
+      "completedAt": "2026-10-30T02:57:43.853Z"
+    },
+    {
       "candidate": "case59-attempt001",
       "status": "protocol_executed_pending_visual_and_score_review",
       "frames": 480,
@@ -153,7 +277,7 @@
     }
   ],
   "limits": [
-    "Only five GPU metrics; not the full benchmark aggregate or leaderboard submission.",
+    "Only four target GPU metrics so far; not the full 15-metric aggregate or leaderboard submission. Historical aesthetic scores are preserved but excluded from the objective.",
     "Legacy generic-demo videos have different action timing and are not a controlled baseline.",
     "Published legacy review videos are historical and are not the new scored files.",
     "Orbia remains paused; LWDP and Seedance generation remain off."
