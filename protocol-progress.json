@@ -1,0 +1,161 @@
+{
+  "updatedAtUtc": "2026-10-30T02:55:03Z",
+  "timezone": "Asia/Shanghai",
+  "scope": {
+    "lowScoreCases": 71,
+    "priorityP1": 15,
+    "remainingP2P3": 56
+  },
+  "fullBenchmarkComplete": false,
+  "metricSubset": [
+    "navigation_trajectory",
+    "dynamic_degree",
+    "segment_continuity",
+    "aesthetic_quality",
+    "imaging_quality"
+  ],
+  "evaluatorCommit": "753cc9828173e00d71e20eafff0653bd33e881f9",
+  "protocol": "Per-case official action sequence; 4 seconds per turn; opening settle excluded; v2 uniform look30",
+  "scores": [
+    {
+      "run": "xxk-p1-29-official-nav-v2-20261030-a01",
+      "complete": true,
+      "metrics": {
+        "navigation_trajectory": {
+          "NavScore": 0.9763248939075777,
+          "accuracy": 0.9843647133768096,
+          "consistency": 0.9682850744383459
+        },
+        "dynamic_degree": 1.0,
+        "segment_continuity": 1.0,
+        "aesthetic_quality": 0.4748341292142868,
+        "imaging_quality": 0.7369480776786804
+      },
+      "status": "completed_fast_gpu_subset",
+      "caseId": 29
+    },
+    {
+      "run": "xxk-p1-59-official-nav-v2-20261030-a01",
+      "complete": true,
+      "metrics": {
+        "navigation_trajectory": {
+          "NavScore": 0.8896123205249191,
+          "accuracy": 0.9008399354425676,
+          "consistency": 0.8783847056072706
+        },
+        "dynamic_degree": 1.0,
+        "segment_continuity": 1.0,
+        "aesthetic_quality": 0.4667289465665817,
+        "imaging_quality": 0.7159280872344971
+      },
+      "status": "completed_fast_gpu_subset",
+      "caseId": 59
+    },
+    {
+      "run": "xxk-p1-104-official-nav-v2-20261030-a01",
+      "complete": true,
+      "metrics": {
+        "navigation_trajectory": {
+          "NavScore": 0.8736064333216894,
+          "accuracy": 0.9394755933678298,
+          "consistency": 0.807737273275549
+        },
+        "dynamic_degree": 1.0,
+        "segment_continuity": 1.0,
+        "aesthetic_quality": 0.7016386657953263,
+        "imaging_quality": 0.7336183333396912
+      },
+      "status": "completed_fast_gpu_subset",
+      "caseId": 104
+    },
+    {
+      "run": "xxk-p1-157-official-nav-v2-20261030-a01",
+      "complete": true,
+      "metrics": {
+        "navigation_trajectory": {
+          "NavScore": 0.8701644797911168,
+          "accuracy": 0.7900319515842211,
+          "consistency": 0.9502970079980124
+        },
+        "dynamic_degree": 0.0,
+        "segment_continuity": 1.0,
+        "aesthetic_quality": 0.5116524835427602,
+        "imaging_quality": 0.7466887378692627
+      },
+      "status": "completed_fast_gpu_subset",
+      "caseId": 157
+    }
+  ],
+  "recordedCandidates": [
+    {
+      "candidate": "case104-attempt001",
+      "status": "protocol_executed_pending_visual_and_score_review",
+      "frames": 480,
+      "durationSeconds": 16,
+      "videoSha256": "2c3fa77484526c2b75f819bdde9d76148c7731950a502346f5816593b34fd25f",
+      "completedAt": "2026-10-30T02:34:59.612Z"
+    },
+    {
+      "candidate": "case157-attempt002",
+      "status": "protocol_executed_pending_visual_and_score_review",
+      "frames": 360,
+      "durationSeconds": 12,
+      "videoSha256": "4d3d3b80204e8ac91b88a5eecf483c512560033ff9af185e8eb49869dddbbc6d",
+      "completedAt": "2026-10-30T02:40:38.787Z"
+    },
+    {
+      "candidate": "case29-attempt001",
+      "status": "protocol_executed_pending_visual_and_score_review",
+      "frames": 480,
+      "durationSeconds": 16,
+      "videoSha256": "bd493053ef2d5463b4df55fab59117ba45621d55a2be102caf6e5e95c2d0ea93",
+      "completedAt": "2026-10-30T02:34:22.011Z"
+    },
+    {
+      "candidate": "case59-attempt001",
+      "status": "protocol_executed_pending_visual_and_score_review",
+      "frames": 480,
+      "durationSeconds": 16,
+      "videoSha256": "0e21bf297779e7c158566048cfef4c0bb53ff822662208aad223af9afbe97098",
+      "completedAt": "2026-10-30T02:40:22.287Z"
+    },
+    {
+      "candidate": "case61-attempt001",
+      "status": "protocol_executed_pending_visual_and_score_review",
+      "frames": 480,
+      "durationSeconds": 16,
+      "videoSha256": "a9ffe04d48fc45da4ff69e035c6b44d451eb7d07ee422e9270c2360d62d60f5d",
+      "completedAt": "2026-10-30T02:49:24.937Z"
+    },
+    {
+      "candidate": "case62-attempt001",
+      "status": "protocol_executed_pending_visual_and_score_review",
+      "frames": 480,
+      "durationSeconds": 16,
+      "videoSha256": "cec80a74c5dbc6b094c846eb4d56b6f0fcb85273994f272246b2e18dfb2c770a",
+      "completedAt": "2026-10-30T02:45:13.818Z"
+    },
+    {
+      "candidate": "case65-attempt001",
+      "status": "protocol_executed_pending_visual_and_score_review",
+      "frames": 480,
+      "durationSeconds": 16,
+      "videoSha256": "9b23c75c91b532b0b230d02e022f20434f1a55137bccaf2669415e7602be6ae0",
+      "completedAt": "2026-10-30T02:41:27.195Z"
+    },
+    {
+      "candidate": "case99-attempt001",
+      "status": "protocol_executed_pending_visual_and_score_review",
+      "frames": 480,
+      "durationSeconds": 16,
+      "videoSha256": "0975a624b47576630632ac6e1c8f76a39aac09952e90551a98479b903df23b58",
+      "completedAt": "2026-10-30T02:51:21.609Z"
+    }
+  ],
+  "limits": [
+    "Only five GPU metrics; not the full benchmark aggregate or leaderboard submission.",
+    "Legacy generic-demo videos have different action timing and are not a controlled baseline.",
+    "Published legacy review videos are historical and are not the new scored files.",
+    "Orbia remains paused; LWDP and Seedance generation remain off."
+  ]
+}
