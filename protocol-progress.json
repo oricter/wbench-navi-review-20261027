@@ -1,5 +1,5 @@
 {
-  "updatedAtUtc": "2026-10-30T04:46:21Z",
+  "updatedAtUtc": "2026-10-30T05:16:49Z",
   "timezone": "Asia/Shanghai",
   "scope": {
     "lowScoreCases": 71,
@@ -345,6 +345,66 @@
       }
     }
   },
+  "physicalVerification": {
+    "status": "completed",
+    "finishedAt": 1793335339.8277884,
+    "fps": 2.0,
+    "precision": "bfloat16",
+    "completedCaseIds": [
+      104,
+      118,
+      156,
+      157,
+      29,
+      42,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      76,
+      99
+    ]
+  },
+  "upstreamDelta": {
+    "status": "running",
+    "stage": "fresh-megasam",
+    "pin": "15c3690c98f210ac1ce4a4452c95f50a2cf17a1a",
+    "caseIds": [
+      29,
+      42,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      76,
+      99,
+      104,
+      118,
+      156,
+      157
+    ],
+    "finishedAt": null
+  },
+  "visualHolds": [
+    {
+      "candidate": "case60-attempt002",
+      "approved": false,
+      "status": "held_source_or_boot_defect",
+      "reason": "Cockpit absent from entire opening image after reparenting. Hold capture and scoring pending source/native first-person visibility diagnosis."
+    },
+    {
+      "candidate": "case95-attempt001",
+      "approved": false,
+      "status": "held_source_or_boot_defect",
+      "reason": "Full-image DOM error overlay reads Vineyard could not start: [object Object]. Protocol-frame count does not prove successful boot. Reject scoring pending diagnosis; retain original artifact."
+    }
+  ],
   "currentEvaluationJudge": "doubao-seed-2-0-lite-260428",
   "currentEvaluationMatchesHistoricalJudge": false,
   "evaluatorCommit": "753cc9828173e00d71e20eafff0653bd33e881f9",
@@ -697,6 +757,13 @@
       "videoSha256": "a29f4df581d12ffa4a6e3303afe7982bf17a32b8e71fd415b6271024843fbba3"
     },
     {
+      "candidate": "case47-attempt002",
+      "status": "protocol_executed_pending_visual_and_score_review",
+      "frames": 480,
+      "durationSeconds": 16,
+      "videoSha256": "b3b0b9094c01b8d9744e71231054c0a1e05d2765e3e9169a3349c05da5d82e09"
+    },
+    {
       "candidate": "case59-attempt001",
       "status": "protocol_executed_pending_visual_and_score_review",
       "frames": 480,
@@ -760,6 +827,20 @@
       "videoSha256": "cc22fbd9fa291b4593c603afe5f19e5908fa47fc9618b133f2c899a508592e22"
     },
     {
+      "candidate": "case79-attempt001",
+      "status": "protocol_executed_pending_visual_and_score_review",
+      "frames": 480,
+      "durationSeconds": 16,
+      "videoSha256": "2f811ab9c9c38c54c1463460f2ac167a09bfe12686d47f18a13b07c6cbb526bd"
+    },
+    {
+      "candidate": "case95-attempt001",
+      "status": "protocol_executed_pending_visual_and_score_review",
+      "frames": 480,
+      "durationSeconds": 16,
+      "videoSha256": "67811f5a123e3bed7b2e5429ad08059b85cec4fa25ce1d0e5fe789b2a8a5263d"
+    },
+    {
       "candidate": "case99-attempt001",
       "status": "protocol_executed_pending_visual_and_score_review",
       "frames": 480,
@@ -768,7 +849,7 @@
     }
   ],
   "limits": [
-    "Only four target GPU metrics so far; not the full 18-metric aggregate or leaderboard submission. Historical aesthetic scores are preserved but excluded from the objective.",
+    "The detailed table shows four fast GPU metrics; 15-case extended GPU, physical and VLM stages are complete. Latest official pose/navigation verification is separate; no full158 aggregate or leaderboard submission. Historical aesthetic scores are preserved but excluded from the objective.",
     "Legacy generic-demo videos have different action timing and are not a controlled baseline.",
     "Published legacy review videos are historical and are not the new scored files.",
     "Orbia remains paused; LWDP and Seedance generation remain off."
